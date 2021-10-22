@@ -1,0 +1,286 @@
+@base <http://example.com/base/> .
+@prefix ma: <http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+ma:Systema a ma:MartialArt;
+  rdfs:label "Systema" .
+
+ma:Brazilian%20Jiu-Jitsu a ma:MartialArt;
+  rdfs:label "Brazilian Jiu-Jitsu";
+  ma:primaryTechnicalFocus ma:Joint-locks, ma:Takedowns .
+
+ma:Joint-locks a ma:Technique;
+  rdfs:label "Joint-locks"@en .
+
+ma:Takedowns a ma:Technique;
+  rdfs:label "Takedowns"@en .
+
+ma:Jūjutsu a ma:MartialArt;
+  rdfs:label "Jūjutsu";
+  ma:primaryTechnicalFocus ma:Joint-locks, ma:Takedowns, ma:Throwing .
+
+ma:Throwing a ma:Technique;
+  rdfs:label "Throwing"@en .
+
+ma:Judo a ma:MartialArt;
+  rdfs:label "Judo";
+  ma:primaryTechnicalFocus ma:Joint-locks, ma:Takedowns, ma:Throwing .
+
+ma:Wrestling a ma:MartialArt;
+  rdfs:label "Wrestling";
+  ma:primaryTechnicalFocus ma:Joint-locks, ma:Takedowns, ma:Throwing .
+
+ma:Pehlwani a ma:MartialArt;
+  rdfs:label "Pehlwani";
+  ma:primaryTechnicalFocus ma:Joint-locks, ma:Takedowns, ma:Throwing .
+
+ma:Huka-Huka a ma:MartialArt;
+  rdfs:label "Huka-Huka";
+  ma:primaryTechnicalFocus ma:Joint-locks, ma:Takedowns, ma:Throwing .
+
+ma:Daitō-ryū%20Aiki-jūjutsu a ma:MartialArt;
+  rdfs:label "Daitō-ryū Aiki-jūjutsu";
+  ma:primaryTechnicalFocus ma:Joint-locks, ma:Takedowns, ma:Throwing .
+
+ma:Nuba%20Fighting a ma:MartialArt;
+  rdfs:label "Nuba Fighting";
+  ma:primaryTechnicalFocus ma:Joint-locks, ma:Takedowns, ma:Throwing, ma:Weapons .
+
+ma:Weapons a ma:Technique;
+  rdfs:label "Weapons"@en .
+
+ma:Adithada a ma:MartialArt;
+  rdfs:label "Adithada";
+  ma:primaryTechnicalFocus ma:Striking .
+
+ma:Striking a ma:Technique;
+  rdfs:label "Striking"@en .
+
+ma:Shaolin%20Kung%20Fu a ma:MartialArt;
+  rdfs:label "Shaolin Kung Fu";
+  ma:primaryTechnicalFocus ma:Striking .
+
+ma:Boxing a ma:MartialArt;
+  rdfs:label "Boxing";
+  ma:primaryTechnicalFocus ma:Striking .
+
+ma:Muay%20Thai a ma:MartialArt;
+  rdfs:label "Muay Thai";
+  ma:primaryTechnicalFocus ma:Striking .
+
+ma:Karate%20Do a ma:MartialArt;
+  rdfs:label "Karate Do";
+  ma:primaryTechnicalFocus ma:Striking .
+
+ma:Taekwondo a ma:MartialArt;
+  rdfs:label "Taekwondo";
+  ma:primaryTechnicalFocus ma:Striking .
+
+ma:Capoeira a ma:MartialArt;
+  rdfs:label "Capoeira";
+  ma:primaryTechnicalFocus ma:Striking .
+
+ma:Kickboxing a ma:MartialArt;
+  rdfs:label "Kickboxing";
+  ma:primaryTechnicalFocus ma:Striking .
+
+ma:Sanda a ma:MartialArt;
+  rdfs:label "Sanda";
+  ma:primaryTechnicalFocus ma:Striking .
+
+ma:Wing%20Chun%20Kuen a ma:MartialArt;
+  rdfs:label "Wing Chun Kuen";
+  ma:primaryTechnicalFocus ma:Striking .
+
+ma:Chángquán a ma:MartialArt;
+  rdfs:label "Chángquán";
+  ma:primaryTechnicalFocus ma:Striking .
+
+ma:Fānziquán a ma:MartialArt;
+  rdfs:label "Fānziquán";
+  ma:primaryTechnicalFocus ma:Striking .
+
+ma:Dambe a ma:MartialArt;
+  rdfs:label "Dambe";
+  ma:primaryTechnicalFocus ma:Striking .
+
+ma:Engolo a ma:MartialArt;
+  rdfs:label "Engolo";
+  ma:primaryTechnicalFocus ma:Striking .
+
+ma:Moraingy a ma:MartialArt;
+  rdfs:label "Moraingy";
+  ma:primaryTechnicalFocus ma:Striking .
+
+ma:Bajiquan a ma:MartialArt;
+  rdfs:label "Bajiquan";
+  ma:primaryTechnicalFocus ma:Striking .
+
+ma:Bak%20Mei a ma:MartialArt;
+  rdfs:label "Bak Mei";
+  ma:primaryTechnicalFocus ma:Striking .
+
+ma:Taidō a ma:MartialArt;
+  rdfs:label "Taidō";
+  ma:primaryTechnicalFocus ma:Striking .
+
+ma:Kyusho%20Jitsu a ma:MartialArt;
+  rdfs:label "Kyusho Jitsu";
+  ma:primaryTechnicalFocus ma:Striking .
+
+ma:Savate a ma:MartialArt;
+  rdfs:label "Savate";
+  ma:primaryTechnicalFocus ma:Striking .
+
+ma:Lethwei a ma:MartialArt;
+  rdfs:label "Lethwei";
+  ma:primaryTechnicalFocus ma:Striking .
+
+ma:Tang%20Soo%20Do a ma:MartialArt;
+  rdfs:label "Tang Soo Do";
+  ma:primaryTechnicalFocus ma:Striking .
+
+ma:Soo%20Bahk%20Do a ma:MartialArt;
+  rdfs:label "Soo Bahk Do";
+  ma:primaryTechnicalFocus ma:Striking .
+
+ma:Taijiquan a ma:MartialArt;
+  rdfs:label "Taijiquan";
+  ma:primaryTechnicalFocus ma:Striking, ma:Joint-locks .
+
+ma:Ying%20Quan a ma:MartialArt;
+  rdfs:label "Ying Quan";
+  ma:primaryTechnicalFocus ma:Striking, ma:Joint-locks, ma:Takedowns .
+
+ma:Jeet%20Kune%20Do a ma:MartialArt;
+  rdfs:label "Jeet Kune Do";
+  ma:primaryTechnicalFocus ma:Striking, ma:Joint-locks, ma:Takedowns, ma:Throwing .
+
+ma:Krav%20Maga a ma:MartialArt;
+  rdfs:label "Krav Maga";
+  ma:primaryTechnicalFocus ma:Striking, ma:Joint-locks, ma:Takedowns, ma:Throwing .
+
+ma:Sambo a ma:MartialArt;
+  rdfs:label "Sambo";
+  ma:primaryTechnicalFocus ma:Striking, ma:Joint-locks, ma:Takedowns, ma:Throwing .
+
+ma:Shuai%20Jiao a ma:MartialArt;
+  rdfs:label "Shuai Jiao";
+  ma:primaryTechnicalFocus ma:Striking, ma:Joint-locks, ma:Takedowns, ma:Throwing .
+
+ma:Luta%20Livre a ma:MartialArt;
+  rdfs:label "Luta Livre";
+  ma:primaryTechnicalFocus ma:Striking, ma:Joint-locks, ma:Takedowns, ma:Throwing .
+
+ma:Vale%20Tudo a ma:MartialArt;
+  rdfs:label "Vale Tudo";
+  ma:primaryTechnicalFocus ma:Striking, ma:Joint-locks, ma:Takedowns, ma:Throwing .
+
+ma:Shorinji%20Kempo a ma:MartialArt;
+  rdfs:label "Shorinji Kempo";
+  ma:primaryTechnicalFocus ma:Striking, ma:Joint-locks, ma:Takedowns, ma:Throwing .
+
+ma:Pankration a ma:MartialArt;
+  rdfs:label "Pankration";
+  ma:primaryTechnicalFocus ma:Striking, ma:Joint-locks, ma:Takedowns, ma:Throwing .
+
+ma:Kajukenbo a ma:MartialArt;
+  rdfs:label "Kajukenbo";
+  ma:primaryTechnicalFocus ma:Striking, ma:Joint-locks, ma:Takedowns, ma:Throwing .
+
+ma:Hap%20Ki%20Do a ma:MartialArt;
+  rdfs:label "Hap Ki Do";
+  ma:primaryTechnicalFocus ma:Striking, ma:Joint-locks, ma:Takedowns, ma:Throwing, ma:Weapons .
+
+ma:Silat a ma:MartialArt;
+  rdfs:label "Silat";
+  ma:primaryTechnicalFocus ma:Striking, ma:Joint-locks, ma:Takedowns, ma:Throwing, ma:Weapons .
+
+ma:Baguazhang a ma:MartialArt;
+  rdfs:label "Baguazhang";
+  ma:primaryTechnicalFocus ma:Striking, ma:Joint-locks, ma:Takedowns, ma:Throwing, ma:Weapons .
+
+ma:Ninjutsu a ma:MartialArt;
+  rdfs:label "Ninjutsu";
+  ma:primaryTechnicalFocus ma:Striking, ma:Joint-locks, ma:Takedowns, ma:Throwing, ma:Weapons .
+
+ma:Kalaripayattu a ma:MartialArt;
+  rdfs:label "Kalaripayattu";
+  ma:primaryTechnicalFocus ma:Striking, ma:Joint-locks, ma:Takedowns, ma:Throwing, ma:Weapons .
+
+ma:Vovinam a ma:MartialArt;
+  rdfs:label "Vovinam";
+  ma:primaryTechnicalFocus ma:Striking, ma:Joint-locks, ma:Takedowns, ma:Throwing, ma:Weapons .
+
+ma:Bartitsu a ma:MartialArt;
+  rdfs:label "Bartitsu";
+  ma:primaryTechnicalFocus ma:Striking, ma:Joint-locks, ma:Takedowns, ma:Throwing, ma:Weapons .
+
+ma:Hung%20Ga%20Kuen a ma:MartialArt;
+  rdfs:label "Hung Ga Kuen";
+  ma:primaryTechnicalFocus ma:Striking, ma:Takedowns .
+
+ma:Taekkyeon a ma:MartialArt;
+  rdfs:label "Taekkyeon";
+  ma:primaryTechnicalFocus ma:Striking, ma:Throwing .
+
+ma:Subak a ma:MartialArt;
+  rdfs:label "Subak";
+  ma:primaryTechnicalFocus ma:Striking, ma:Throwing .
+
+ma:Piguaquan a ma:MartialArt;
+  rdfs:label "Piguaquan";
+  ma:primaryTechnicalFocus ma:Striking, ma:Weapons .
+
+ma:Bafaquan a ma:MartialArt;
+  rdfs:label "Bafaquan";
+  ma:primaryTechnicalFocus ma:Striking, ma:Weapons .
+
+ma:Aikido a ma:MartialArt;
+  rdfs:label "Aikido";
+  ma:primaryTechnicalFocus ma:Takedowns, ma:Throwing .
+
+ma:Sumo a ma:MartialArt;
+  rdfs:label "Sumo";
+  ma:primaryTechnicalFocus ma:Throwing .
+
+<http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Arnis%20%28Kali/%20Eskrima%29>
+  a ma:MartialArt;
+  rdfs:label "Arnis (Kali/ Eskrima)";
+  ma:primaryTechnicalFocus ma:Weapons .
+
+ma:Kendo a ma:MartialArt;
+  rdfs:label "Kendo";
+  ma:primaryTechnicalFocus ma:Weapons .
+
+ma:Silambam a ma:MartialArt;
+  rdfs:label "Silambam";
+  ma:primaryTechnicalFocus ma:Weapons .
+
+ma:Gatka a ma:MartialArt;
+  rdfs:label "Gatka";
+  ma:primaryTechnicalFocus ma:Weapons .
+
+ma:Nguni%20Stick%20Fighting a ma:MartialArt;
+  rdfs:label "Nguni Stick Fighting";
+  ma:primaryTechnicalFocus ma:Weapons .
+
+ma:Tahtib a ma:MartialArt;
+  rdfs:label "Tahtib";
+  ma:primaryTechnicalFocus ma:Weapons .
+
+ma:Istunka a ma:MartialArt;
+  rdfs:label "Istunka";
+  ma:primaryTechnicalFocus ma:Weapons .
+
+ma:Kyūdō a ma:MartialArt;
+  rdfs:label "Kyūdō";
+  ma:primaryTechnicalFocus ma:Weapons .
+
+ma:Lathi%20Khela a ma:MartialArt;
+  rdfs:label "Lathi Khela";
+  ma:primaryTechnicalFocus ma:Weapons .
+
+ma:Iaido a ma:MartialArt;
+  rdfs:label "Iaido";
+  ma:primaryTechnicalFocus ma:Weapons .
