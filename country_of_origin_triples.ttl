@@ -1,0 +1,320 @@
+@base <http://example.com/base/> .
+@prefix ma: <http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbp: <http://dbpedia.org/property#> .
+@prefix dbr: <http://dbpedia.org/resource#> .
+
+ma:Engolo a ma:MartialArt;
+  rdfs:label "Engolo";
+  dbp:country ma:Angola .
+
+ma:Angola rdfs:label "Angola"@en .
+
+ma:Brazilian%20Jiu-Jitsu a ma:MartialArt;
+  rdfs:label "Brazilian Jiu-Jitsu";
+  dbp:country ma:Brazil .
+
+ma:Brazil rdfs:label "Brazil"@en .
+
+ma:Huka-Huka a ma:MartialArt;
+  rdfs:label "Huka-Huka";
+  dbp:country ma:Brazil .
+
+ma:Luta%20Livre a ma:MartialArt;
+  rdfs:label "Luta Livre";
+  dbp:country ma:Brazil .
+
+ma:Vale%20Tudo a ma:MartialArt;
+  rdfs:label "Vale Tudo";
+  dbp:country ma:Brazil .
+
+ma:Capoeira a ma:MartialArt;
+  rdfs:label "Capoeira";
+  dbp:country ma:Brazil .
+
+ma:Bafaquan a ma:MartialArt;
+  rdfs:label "Bafaquan";
+  dbp:country ma:China .
+
+ma:China rdfs:label "China"@en .
+
+ma:Shuai%20Jiao a ma:MartialArt;
+  rdfs:label "Shuai Jiao";
+  dbp:country ma:China .
+
+ma:Fānziquán a ma:MartialArt;
+  rdfs:label "Fānziquán";
+  dbp:country ma:China .
+
+ma:Shaolin%20Kung%20Fu a ma:MartialArt;
+  rdfs:label "Shaolin Kung Fu";
+  dbp:country ma:China .
+
+ma:Bajiquan a ma:MartialArt;
+  rdfs:label "Bajiquan";
+  dbp:country ma:China .
+
+ma:Wing%20Chun%20Kuen a ma:MartialArt;
+  rdfs:label "Wing Chun Kuen";
+  dbp:country ma:China .
+
+ma:Bak%20Mei a ma:MartialArt;
+  rdfs:label "Bak Mei";
+  dbp:country ma:China .
+
+ma:Ying%20Quan a ma:MartialArt;
+  rdfs:label "Ying Quan";
+  dbp:country ma:China .
+
+ma:Piguaquan a ma:MartialArt;
+  rdfs:label "Piguaquan";
+  dbp:country ma:China .
+
+ma:Taijiquan a ma:MartialArt;
+  rdfs:label "Taijiquan";
+  dbp:country ma:China .
+
+ma:Baguazhang a ma:MartialArt;
+  rdfs:label "Baguazhang";
+  dbp:country ma:China .
+
+ma:Hung%20Ga%20Kuen a ma:MartialArt;
+  rdfs:label "Hung Ga Kuen";
+  dbp:country ma:China .
+
+ma:Sanda a ma:MartialArt;
+  rdfs:label "Sanda";
+  dbp:country ma:China .
+
+ma:Chángquán a ma:MartialArt;
+  rdfs:label "Chángquán";
+  dbp:country ma:China .
+
+ma:Krav%20Maga a ma:MartialArt;
+  rdfs:label "Krav Maga";
+  dbp:country ma:Czech%20Republic .
+
+ma:Czech%20Republic rdfs:label "Czech Republic"@en .
+
+ma:Tahtib a ma:MartialArt;
+  rdfs:label "Tahtib";
+  dbp:country ma:Egypt .
+
+ma:Egypt rdfs:label "Egypt"@en .
+
+ma:Savate a ma:MartialArt;
+  rdfs:label "Savate";
+  dbp:country ma:France .
+
+ma:France rdfs:label "France"@en .
+
+ma:Wrestling a ma:MartialArt;
+  rdfs:label "Wrestling";
+  dbp:country ma:Greece .
+
+ma:Greece rdfs:label "Greece"@en .
+
+ma:Pankration a ma:MartialArt;
+  rdfs:label "Pankration";
+  dbp:country ma:Greece .
+
+ma:Adithada a ma:MartialArt;
+  rdfs:label "Adithada";
+  dbp:country ma:India .
+
+ma:India rdfs:label "India"@en .
+
+ma:Lathi%20Khela a ma:MartialArt;
+  rdfs:label "Lathi Khela";
+  dbp:country ma:India .
+
+ma:Kalaripayattu a ma:MartialArt;
+  rdfs:label "Kalaripayattu";
+  dbp:country ma:India .
+
+ma:Silambam a ma:MartialArt;
+  rdfs:label "Silambam";
+  dbp:country ma:India .
+
+ma:Pehlwani a ma:MartialArt;
+  rdfs:label "Pehlwani";
+  dbp:country ma:India .
+
+ma:Gatka a ma:MartialArt;
+  rdfs:label "Gatka";
+  dbp:country ma:India .
+
+ma:Judo a ma:MartialArt;
+  rdfs:label "Judo";
+  dbp:country ma:Japan .
+
+ma:Japan rdfs:label "Japan"@en .
+
+ma:Sumo a ma:MartialArt;
+  rdfs:label "Sumo";
+  dbp:country ma:Japan .
+
+ma:Ninjutsu a ma:MartialArt;
+  rdfs:label "Ninjutsu";
+  dbp:country ma:Japan .
+
+ma:Iaido a ma:MartialArt;
+  rdfs:label "Iaido";
+  dbp:country ma:Japan .
+
+ma:Aikido a ma:MartialArt;
+  rdfs:label "Aikido";
+  dbp:country ma:Japan .
+
+ma:Karate%20Do a ma:MartialArt;
+  rdfs:label "Karate Do";
+  dbp:country ma:Japan .
+
+ma:Taidō a ma:MartialArt;
+  rdfs:label "Taidō";
+  dbp:country ma:Japan .
+
+ma:Shorinji%20Kempo a ma:MartialArt;
+  rdfs:label "Shorinji Kempo";
+  dbp:country ma:Japan .
+
+ma:Kyusho%20Jitsu a ma:MartialArt;
+  rdfs:label "Kyusho Jitsu";
+  dbp:country ma:Japan .
+
+ma:Daitō-ryū%20Aiki-jūjutsu a ma:MartialArt;
+  rdfs:label "Daitō-ryū Aiki-jūjutsu";
+  dbp:country ma:Japan .
+
+ma:Jūjutsu a ma:MartialArt;
+  rdfs:label "Jūjutsu";
+  dbp:country ma:Japan .
+
+ma:Kyūdō a ma:MartialArt;
+  rdfs:label "Kyūdō";
+  dbp:country ma:Japan .
+
+ma:Kendo a ma:MartialArt;
+  rdfs:label "Kendo";
+  dbp:country ma:Japan .
+
+ma:Soo%20Bahk%20Do a ma:MartialArt;
+  rdfs:label "Soo Bahk Do";
+  dbp:country ma:Korea .
+
+ma:Korea rdfs:label "Korea"@en .
+
+ma:Tang%20Soo%20Do a ma:MartialArt;
+  rdfs:label "Tang Soo Do";
+  dbp:country ma:Korea .
+
+ma:Taekkyeon a ma:MartialArt;
+  rdfs:label "Taekkyeon";
+  dbp:country ma:Korea .
+
+ma:Taekwondo a ma:MartialArt;
+  rdfs:label "Taekwondo";
+  dbp:country ma:Korea .
+
+ma:Hap%20Ki%20Do a ma:MartialArt;
+  rdfs:label "Hap Ki Do";
+  dbp:country ma:Korea .
+
+ma:Subak a ma:MartialArt;
+  rdfs:label "Subak";
+  dbp:country ma:Korea .
+
+ma:Moraingy a ma:MartialArt;
+  rdfs:label "Moraingy";
+  dbp:country ma:Madagascar .
+
+ma:Madagascar rdfs:label "Madagascar"@en .
+
+ma:Silat a ma:MartialArt;
+  rdfs:label "Silat";
+  dbp:country ma:Malaysia .
+
+ma:Malaysia rdfs:label "Malaysia"@en .
+
+ma:Lethwei a ma:MartialArt;
+  rdfs:label "Lethwei";
+  dbp:country ma:Myanmar .
+
+ma:Myanmar rdfs:label "Myanmar"@en .
+
+ma:Dambe a ma:MartialArt;
+  rdfs:label "Dambe";
+  dbp:country ma:Nigeria .
+
+ma:Nigeria rdfs:label "Nigeria"@en .
+
+<http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Arnis%20%28Kali/%20Eskrima%29>
+  a ma:MartialArt;
+  rdfs:label "Arnis (Kali/ Eskrima)";
+  dbp:country ma:Philippines .
+
+ma:Philippines rdfs:label "Philippines"@en .
+
+ma:Sambo a ma:MartialArt;
+  rdfs:label "Sambo";
+  dbp:country ma:Russia .
+
+ma:Russia rdfs:label "Russia"@en .
+
+ma:Systema a ma:MartialArt;
+  rdfs:label "Systema";
+  dbp:country ma:Russia .
+
+ma:Istunka a ma:MartialArt;
+  rdfs:label "Istunka";
+  dbp:country ma:Somalia .
+
+ma:Somalia rdfs:label "Somalia"@en .
+
+ma:Nguni%20Stick%20Fighting a ma:MartialArt;
+  rdfs:label "Nguni Stick Fighting";
+  dbp:country ma:South%20Africa .
+
+ma:South%20Africa rdfs:label "South Africa"@en .
+
+ma:Nuba%20Fighting a ma:MartialArt;
+  rdfs:label "Nuba Fighting";
+  dbp:country ma:Sudan .
+
+ma:Sudan rdfs:label "Sudan"@en .
+
+ma:Muay%20Thai a ma:MartialArt;
+  rdfs:label "Muay Thai";
+  dbp:country ma:Thailand .
+
+ma:Thailand rdfs:label "Thailand"@en .
+
+ma:Kickboxing a ma:MartialArt;
+  rdfs:label "Kickboxing";
+  dbp:country ma:Thailand .
+
+ma:Boxing a ma:MartialArt;
+  rdfs:label "Boxing";
+  dbp:country ma:United%20Kingdom .
+
+ma:United%20Kingdom rdfs:label "United Kingdom"@en .
+
+ma:Bartitsu a ma:MartialArt;
+  rdfs:label "Bartitsu";
+  dbp:country ma:United%20Kingdom .
+
+ma:Kajukenbo a ma:MartialArt;
+  rdfs:label "Kajukenbo";
+  dbp:country ma:United%20States%20of%20America .
+
+ma:United%20States%20of%20America rdfs:label "United States of America"@en .
+
+ma:Jeet%20Kune%20Do a ma:MartialArt;
+  rdfs:label "Jeet Kune Do";
+  dbp:country ma:United%20States%20of%20America .
+
+ma:Vovinam a ma:MartialArt;
+  rdfs:label "Vovinam";
+  dbp:country ma:Vietnam .
+
+ma:Vietnam rdfs:label "Vietnam"@en .
