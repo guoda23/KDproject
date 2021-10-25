@@ -42,33 +42,33 @@ dbp:descendants rdf:type owl:ObjectProperty .
 dbp:focus rdf:type owl:ObjectProperty .
 
 
-###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/hasOrigin
-<http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/hasOrigin> rdf:type owl:ObjectProperty .
+###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#hasOrigin
+ma:hasOrigin rdf:type owl:ObjectProperty .
 
 
-###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/practices
-<http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/practices> rdf:type owl:ObjectProperty ;
-                                                                                    rdfs:subPropertyOf owl:topObjectProperty .
+###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#practices
+ma:practices rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf owl:topObjectProperty .
 
 
-###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/primaryPurpose
-<http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/primaryPurpose> rdf:type owl:ObjectProperty ;
-                                                                                         rdfs:subPropertyOf owl:topObjectProperty .
+###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#primaryPurpose
+ma:primaryPurpose rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf owl:topObjectProperty .
 
 
-###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/primaryTechnicalFocus
-<http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/primaryTechnicalFocus> rdf:type owl:ObjectProperty ;
-                                                                                                rdfs:subPropertyOf owl:topObjectProperty .
+###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#primaryTechnicalFocus
+ma:primaryTechnicalFocus rdf:type owl:ObjectProperty ;
+                         rdfs:subPropertyOf owl:topObjectProperty .
 
 
-###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/usedIn
-<http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/usedIn> rdf:type owl:ObjectProperty ;
-                                                                                 rdfs:subPropertyOf owl:topObjectProperty .
+###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#usedIn
+ma:usedIn rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf owl:topObjectProperty .
 
 
-###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/uses
-<http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/uses> rdf:type owl:ObjectProperty ;
-                                                                               rdfs:subPropertyOf owl:topObjectProperty .
+###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#uses
+ma:uses rdf:type owl:ObjectProperty ;
+        rdfs:subPropertyOf owl:topObjectProperty .
 
 
 #################################################################
@@ -90,8 +90,8 @@ dbr:Country rdf:type owl:Class .
 ###  http://dbpedia.org/resource#Equipment
 dbr:Equipment rdf:type owl:Class ;
               owl:equivalentClass [ rdf:type owl:Restriction ;
-                                    owl:onProperty <http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/usedIn> ;
-                                    owl:someValuesFrom <http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/MartialArt>
+                                    owl:onProperty ma:usedIn ;
+                                    owl:someValuesFrom ma:MartialArt
                                   ] .
 
 
@@ -100,111 +100,111 @@ dbr:Weapon rdf:type owl:Class ;
            rdfs:subClassOf dbr:Equipment .
 
 
-###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/ArmedMartialArt
-<http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/ArmedMartialArt> rdf:type owl:Class ;
-                                                                                          owl:equivalentClass [ rdf:type owl:Restriction ;
-                                                                                                                owl:onProperty <http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/uses> ;
-                                                                                                                owl:someValuesFrom dbr:Weapon
-                                                                                                              ] ;
-                                                                                          rdfs:subClassOf <http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/MartialArt> ;
-                                                                                          owl:disjointWith <http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/UnarmedMartialArt> .
+###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#ArmedMartialArt
+ma:ArmedMartialArt rdf:type owl:Class ;
+                   owl:equivalentClass [ rdf:type owl:Restriction ;
+                                         owl:onProperty ma:uses ;
+                                         owl:someValuesFrom dbr:Weapon
+                                       ] ;
+                   rdfs:subClassOf ma:MartialArt ;
+                   owl:disjointWith ma:UnarmedMartialArt .
 
 
-###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/BladedWeapons
-<http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/BladedWeapons> rdf:type owl:Class ;
-                                                                                        rdfs:subClassOf <http://crossings.github.io/term#MeleeWeaponType> ,
-                                                                                                        dbr:Weapon .
+###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#BladedWeapons
+ma:BladedWeapons rdf:type owl:Class ;
+                 rdfs:subClassOf <http://crossings.github.io/term#MeleeWeaponType> ,
+                                 dbr:Weapon .
 
 
-###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/BrazilianMartialArt
-<http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/BrazilianMartialArt> rdf:type owl:Class ;
-                                                                                              owl:equivalentClass [ rdf:type owl:Restriction ;
-                                                                                                                    owl:onProperty dbp:country ;
-                                                                                                                    owl:hasValue dbr:Brazil
-                                                                                                                  ] ;
-                                                                                              rdfs:subClassOf <http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/MartialArt> .
+###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#BrazilianMartialArt
+ma:BrazilianMartialArt rdf:type owl:Class ;
+                       owl:equivalentClass [ rdf:type owl:Restriction ;
+                                             owl:onProperty dbp:country ;
+                                             owl:hasValue dbr:Brazil
+                                           ] ;
+                       rdfs:subClassOf ma:MartialArt .
 
 
-###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/ChineseMartialArt
-<http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/ChineseMartialArt> rdf:type owl:Class ;
-                                                                                            owl:equivalentClass [ rdf:type owl:Restriction ;
-                                                                                                                  owl:onProperty dbp:country ;
-                                                                                                                  owl:hasValue dbr:China
-                                                                                                                ] ;
-                                                                                            rdfs:subClassOf <http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/MartialArt> .
+###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#ChineseMartialArt
+ma:ChineseMartialArt rdf:type owl:Class ;
+                     owl:equivalentClass [ rdf:type owl:Restriction ;
+                                           owl:onProperty dbp:country ;
+                                           owl:hasValue dbr:China
+                                         ] ;
+                     rdfs:subClassOf ma:MartialArt .
 
 
-###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/IndianMartialArt
-<http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/IndianMartialArt> rdf:type owl:Class ;
-                                                                                           owl:equivalentClass [ rdf:type owl:Restriction ;
-                                                                                                                 owl:onProperty dbp:country ;
-                                                                                                                 owl:hasValue dbr:India
-                                                                                                               ] ;
-                                                                                           rdfs:subClassOf <http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/MartialArt> .
+###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#IndianMartialArt
+ma:IndianMartialArt rdf:type owl:Class ;
+                    owl:equivalentClass [ rdf:type owl:Restriction ;
+                                          owl:onProperty dbp:country ;
+                                          owl:hasValue dbr:India
+                                        ] ;
+                    rdfs:subClassOf ma:MartialArt .
 
 
-###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/JapaneseMartialArt
-<http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/JapaneseMartialArt> rdf:type owl:Class ;
-                                                                                             owl:equivalentClass [ rdf:type owl:Restriction ;
-                                                                                                                   owl:onProperty dbp:country ;
-                                                                                                                   owl:hasValue dbr:Japan
-                                                                                                                 ] ;
-                                                                                             rdfs:subClassOf <http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/MartialArt> .
+###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#JapaneseMartialArt
+ma:JapaneseMartialArt rdf:type owl:Class ;
+                      owl:equivalentClass [ rdf:type owl:Restriction ;
+                                            owl:onProperty dbp:country ;
+                                            owl:hasValue dbr:Japan
+                                          ] ;
+                      rdfs:subClassOf ma:MartialArt .
 
 
-###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/KoreanMartialArt
-<http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/KoreanMartialArt> rdf:type owl:Class ;
-                                                                                           owl:equivalentClass [ rdf:type owl:Restriction ;
-                                                                                                                 owl:onProperty dbp:country ;
-                                                                                                                 owl:hasValue dbr:Korea
-                                                                                                               ] ;
-                                                                                           rdfs:subClassOf <http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/MartialArt> .
+###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#KoreanMartialArt
+ma:KoreanMartialArt rdf:type owl:Class ;
+                    owl:equivalentClass [ rdf:type owl:Restriction ;
+                                          owl:onProperty dbp:country ;
+                                          owl:hasValue dbr:Korea
+                                        ] ;
+                    rdfs:subClassOf ma:MartialArt .
 
 
-###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/MartialArt
-<http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/MartialArt> rdf:type owl:Class ;
-                                                                                     owl:equivalentClass [ rdf:type owl:Restriction ;
-                                                                                                           owl:onProperty dbp:focus ;
-                                                                                                           owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                                                                           owl:onClass <http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/Style>
-                                                                                                         ] .
+###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#MartialArt
+ma:MartialArt rdf:type owl:Class ;
+              owl:equivalentClass [ rdf:type owl:Restriction ;
+                                    owl:onProperty dbp:focus ;
+                                    owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                    owl:onClass ma:Style
+                                  ] .
 
 
-###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/ProtectiveGear
-<http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/ProtectiveGear> rdf:type owl:Class ;
-                                                                                         rdfs:subClassOf dbr:Equipment .
+###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#ProtectiveGear
+ma:ProtectiveGear rdf:type owl:Class ;
+                  rdfs:subClassOf dbr:Equipment .
 
 
-###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/Purpose
-<http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/Purpose> rdf:type owl:Class .
+###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Purpose
+ma:Purpose rdf:type owl:Class .
 
 
-###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/StaffWeapon
-<http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/StaffWeapon> rdf:type owl:Class ;
-                                                                                      rdfs:subClassOf <http://crossings.github.io/term#MeleeWeaponType> ,
-                                                                                                      dbr:Weapon .
+###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#StaffWeapon
+ma:StaffWeapon rdf:type owl:Class ;
+               rdfs:subClassOf <http://crossings.github.io/term#MeleeWeaponType> ,
+                               dbr:Weapon .
 
 
-###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/Style
-<http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/Style> rdf:type owl:Class .
+###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Style
+ma:Style rdf:type owl:Class .
 
 
-###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/Techniques
-<http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/Techniques> rdf:type owl:Class .
+###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Techniques
+ma:Techniques rdf:type owl:Class .
 
 
-###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/ThaiMartialArt
-<http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/ThaiMartialArt> rdf:type owl:Class ;
-                                                                                         owl:equivalentClass [ rdf:type owl:Restriction ;
-                                                                                                               owl:onProperty dbp:country ;
-                                                                                                               owl:hasValue dbr:Thailand
-                                                                                                             ] ;
-                                                                                         rdfs:subClassOf <http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/MartialArt> .
+###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#ThaiMartialArt
+ma:ThaiMartialArt rdf:type owl:Class ;
+                  owl:equivalentClass [ rdf:type owl:Restriction ;
+                                        owl:onProperty dbp:country ;
+                                        owl:hasValue dbr:Thailand
+                                      ] ;
+                  rdfs:subClassOf ma:MartialArt .
 
 
-###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/UnarmedMartialArt
-<http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/UnarmedMartialArt> rdf:type owl:Class ;
-                                                                                            rdfs:subClassOf <http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/MartialArt> .
+###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#UnarmedMartialArt
+ma:UnarmedMartialArt rdf:type owl:Class ;
+                     rdfs:subClassOf ma:MartialArt .
 
 
 #################################################################
@@ -243,95 +243,95 @@ dbr:Thailand rdf:type owl:NamedIndividual .
 
 ###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/AiKiDo
 <http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/AiKiDo> rdf:type owl:NamedIndividual ,
-                                                                                          <http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/JapaneseMartialArt> .
+                                                                                          ma:JapaneseMartialArt .
 
 
 ###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/BoStaff
 <http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/BoStaff> rdf:type owl:NamedIndividual ,
-                                                                                           <http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/StaffWeapon> .
+                                                                                           ma:StaffWeapon .
 
 
 ###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/Boxing
 <http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/Boxing> rdf:type owl:NamedIndividual ,
-                                                                                          <http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/MartialArt> .
+                                                                                          ma:MartialArt .
 
 
 ###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/BrazilianJiu-Jitsu
 <http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/BrazilianJiu-Jitsu> rdf:type owl:NamedIndividual ,
-                                                                                                      <http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/BrazilianMartialArt> ;
+                                                                                                      ma:BrazilianMartialArt ;
                                                                                              dbp:ancestorArts <http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/Judo> .
 
 
 ###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/Gloves
 <http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/Gloves> rdf:type owl:NamedIndividual ,
-                                                                                          <http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/ProtectiveGear> .
+                                                                                          ma:ProtectiveGear .
 
 
 ###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/Grappling
 <http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/Grappling> rdf:type owl:NamedIndividual ,
-                                                                                             <http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/Style> .
+                                                                                             ma:Style .
 
 
 ###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/GroinGuard
 <http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/GroinGuard> rdf:type owl:NamedIndividual ,
-                                                                                              <http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/ProtectiveGear> .
+                                                                                              ma:ProtectiveGear .
 
 
 ###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/HapKiDo
 <http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/HapKiDo> rdf:type owl:NamedIndividual ,
-                                                                                           <http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/KoreanMartialArt> .
+                                                                                           ma:KoreanMartialArt .
 
 
 ###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/Helmet
 <http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/Helmet> rdf:type owl:NamedIndividual ,
-                                                                                          <http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/ProtectiveGear> .
+                                                                                          ma:ProtectiveGear .
 
 
 ###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/Hybrid
 <http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/Hybrid> rdf:type owl:NamedIndividual ,
-                                                                                          <http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/Style> .
+                                                                                          ma:Style .
 
 
 ###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/Internal
 <http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/Internal> rdf:type owl:NamedIndividual ,
-                                                                                            <http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/Style> .
+                                                                                            ma:Style .
 
 
 ###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/JuJitsu
 <http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/JuJitsu> rdf:type owl:NamedIndividual ,
-                                                                                           <http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/JapaneseMartialArt> ;
+                                                                                           ma:JapaneseMartialArt ;
                                                                                   dbp:focus <http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/Grappling> .
 
 
 ###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/Judo
 <http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/Judo> rdf:type owl:NamedIndividual ,
-                                                                                        <http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/JapaneseMartialArt> ;
+                                                                                        ma:JapaneseMartialArt ;
                                                                                dbp:ancestorArts <http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/JuJitsu> ;
                                                                                dbp:focus <http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/Grappling> .
 
 
 ###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/Karate
 <http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/Karate> rdf:type owl:NamedIndividual ,
-                                                                                          <http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/JapaneseMartialArt> ;
+                                                                                          ma:JapaneseMartialArt ;
                                                                                  dbp:ancestorArts <http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/KungFu> ;
-                                                                                 <http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/uses> <http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/BoStaff> ,
-                                                                                                                                                                <http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/GroinGuard> ,
-                                                                                                                                                                <http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/Helmet> .
+                                                                                 ma:uses <http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/BoStaff> ,
+                                                                                         <http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/GroinGuard> ,
+                                                                                         <http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/Helmet> .
 
 
 ###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/Katana
 <http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/Katana> rdf:type owl:NamedIndividual ,
-                                                                                          <http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/BladedWeapons> .
+                                                                                          ma:BladedWeapons .
 
 
 ###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/KungFu
 <http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/KungFu> rdf:type owl:NamedIndividual ,
-                                                                                          <http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/ChineseMartialArt> .
+                                                                                          ma:ChineseMartialArt .
 
 
 ###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/MixedMartialArts
 <http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/MixedMartialArts> rdf:type owl:NamedIndividual ,
-                                                                                                    <http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/MartialArt> ;
+                                                                                                    ma:MartialArt ;
                                                                                            dbp:ancestorArts <http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/Boxing> ,
                                                                                                             <http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/BrazilianJiu-Jitsu> ,
                                                                                                             <http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/Judo> ,
@@ -341,38 +341,38 @@ dbr:Thailand rdf:type owl:NamedIndividual .
 
 ###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/MouthGuard
 <http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/MouthGuard> rdf:type owl:NamedIndividual ,
-                                                                                              <http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/ProtectiveGear> .
+                                                                                              ma:ProtectiveGear .
 
 
 ###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/MuayThai
 <http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/MuayThai> rdf:type owl:NamedIndividual ,
-                                                                                            <http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/ThaiMartialArt> ;
+                                                                                            ma:ThaiMartialArt ;
                                                                                    dbp:ancestorArts <http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/Boxing> .
 
 
 ###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/Striking
 <http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/Striking> rdf:type owl:NamedIndividual ,
-                                                                                            <http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/Style> .
+                                                                                            ma:Style .
 
 
 ###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/TaeKwonDo
 <http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/TaeKwonDo> rdf:type owl:NamedIndividual ,
-                                                                                             <http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/KoreanMartialArt> ;
+                                                                                             ma:KoreanMartialArt ;
                                                                                     dbp:ancestorArts <http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/TangSooDo> .
 
 
 ###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/TaiChi
 <http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/TaiChi> rdf:type owl:NamedIndividual ,
-                                                                                          <http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/ChineseMartialArt> .
+                                                                                          ma:ChineseMartialArt .
 
 
 ###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/TangSooDo
 <http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/TangSooDo> rdf:type owl:NamedIndividual ,
-                                                                                             <http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/KoreanMartialArt> ;
+                                                                                             ma:KoreanMartialArt ;
                                                                                     dbp:ancestorArts <http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/Karate> ;
-                                                                                    <http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/uses> <http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/Gloves> ,
-                                                                                                                                                                   <http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/Helmet> ,
-                                                                                                                                                                   <http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/MouthGuard> .
+                                                                                    ma:uses <http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/Gloves> ,
+                                                                                            <http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/Helmet> ,
+                                                                                            <http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/MouthGuard> .
 
 
 ###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
