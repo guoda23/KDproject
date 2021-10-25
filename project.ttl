@@ -236,143 +236,143 @@ dbr:Korea rdf:type owl:NamedIndividual .
 dbr:Thailand rdf:type owl:NamedIndividual .
 
 
-###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/Adithada
-<http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/Adithada> rdf:type owl:NamedIndividual ;
-                                                                                   dbp:country dbr:India .
+###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Adithada
+ma:Adithada rdf:type owl:NamedIndividual ;
+            dbp:country dbr:India .
 
 
-###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/AiKiDo
-<http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/AiKiDo> rdf:type owl:NamedIndividual ,
-                                                                                          ma:JapaneseMartialArt .
+###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#AiKiDo
+ma:AiKiDo rdf:type owl:NamedIndividual ,
+                   ma:JapaneseMartialArt .
 
 
-###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/BoStaff
-<http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/BoStaff> rdf:type owl:NamedIndividual ,
-                                                                                           ma:StaffWeapon .
+###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#BoStaff
+ma:BoStaff rdf:type owl:NamedIndividual ,
+                    ma:StaffWeapon .
 
 
-###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/Boxing
-<http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/Boxing> rdf:type owl:NamedIndividual ,
-                                                                                          ma:MartialArt .
+###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Boxing
+ma:Boxing rdf:type owl:NamedIndividual ,
+                   ma:MartialArt .
 
 
-###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/BrazilianJiu-Jitsu
-<http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/BrazilianJiu-Jitsu> rdf:type owl:NamedIndividual ,
-                                                                                                      ma:BrazilianMartialArt ;
-                                                                                             dbp:ancestorArts <http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/Judo> .
+###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#BrazilianJiu-Jitsu
+ma:BrazilianJiu-Jitsu rdf:type owl:NamedIndividual ,
+                               ma:BrazilianMartialArt ;
+                      dbp:ancestorArts ma:Judo .
 
 
-###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/Gloves
-<http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/Gloves> rdf:type owl:NamedIndividual ,
-                                                                                          ma:ProtectiveGear .
+###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Gloves
+ma:Gloves rdf:type owl:NamedIndividual ,
+                   ma:ProtectiveGear .
 
 
-###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/Grappling
-<http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/Grappling> rdf:type owl:NamedIndividual ,
-                                                                                             ma:Style .
+###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Grappling
+ma:Grappling rdf:type owl:NamedIndividual ,
+                      ma:Style .
 
 
-###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/GroinGuard
-<http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/GroinGuard> rdf:type owl:NamedIndividual ,
-                                                                                              ma:ProtectiveGear .
+###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#GroinGuard
+ma:GroinGuard rdf:type owl:NamedIndividual ,
+                       ma:ProtectiveGear .
 
 
-###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/HapKiDo
-<http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/HapKiDo> rdf:type owl:NamedIndividual ,
-                                                                                           ma:KoreanMartialArt .
+###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#HapKiDo
+ma:HapKiDo rdf:type owl:NamedIndividual ,
+                    ma:KoreanMartialArt .
 
 
-###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/Helmet
-<http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/Helmet> rdf:type owl:NamedIndividual ,
-                                                                                          ma:ProtectiveGear .
+###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Helmet
+ma:Helmet rdf:type owl:NamedIndividual ,
+                   ma:ProtectiveGear .
 
 
-###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/Hybrid
-<http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/Hybrid> rdf:type owl:NamedIndividual ,
-                                                                                          ma:Style .
+###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Hybrid
+ma:Hybrid rdf:type owl:NamedIndividual ,
+                   ma:Style .
 
 
-###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/Internal
-<http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/Internal> rdf:type owl:NamedIndividual ,
-                                                                                            ma:Style .
+###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Internal
+ma:Internal rdf:type owl:NamedIndividual ,
+                     ma:Style .
 
 
-###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/JuJitsu
-<http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/JuJitsu> rdf:type owl:NamedIndividual ,
-                                                                                           ma:JapaneseMartialArt ;
-                                                                                  dbp:focus <http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/Grappling> .
+###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#JuJitsu
+ma:JuJitsu rdf:type owl:NamedIndividual ,
+                    ma:JapaneseMartialArt ;
+           dbp:focus ma:Grappling .
 
 
-###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/Judo
-<http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/Judo> rdf:type owl:NamedIndividual ,
-                                                                                        ma:JapaneseMartialArt ;
-                                                                               dbp:ancestorArts <http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/JuJitsu> ;
-                                                                               dbp:focus <http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/Grappling> .
+###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Judo
+ma:Judo rdf:type owl:NamedIndividual ,
+                 ma:JapaneseMartialArt ;
+        dbp:ancestorArts ma:JuJitsu ;
+        dbp:focus ma:Grappling .
 
 
-###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/Karate
-<http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/Karate> rdf:type owl:NamedIndividual ,
-                                                                                          ma:JapaneseMartialArt ;
-                                                                                 dbp:ancestorArts <http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/KungFu> ;
-                                                                                 ma:uses <http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/BoStaff> ,
-                                                                                         <http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/GroinGuard> ,
-                                                                                         <http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/Helmet> .
+###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Karate
+ma:Karate rdf:type owl:NamedIndividual ,
+                   ma:JapaneseMartialArt ;
+          dbp:ancestorArts ma:KungFu ;
+          ma:uses ma:BoStaff ,
+                  ma:GroinGuard ,
+                  ma:Helmet .
 
 
-###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/Katana
-<http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/Katana> rdf:type owl:NamedIndividual ,
-                                                                                          ma:BladedWeapons .
+###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Katana
+ma:Katana rdf:type owl:NamedIndividual ,
+                   ma:BladedWeapons .
 
 
-###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/KungFu
-<http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/KungFu> rdf:type owl:NamedIndividual ,
-                                                                                          ma:ChineseMartialArt .
+###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#KungFu
+ma:KungFu rdf:type owl:NamedIndividual ,
+                   ma:ChineseMartialArt .
 
 
-###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/MixedMartialArts
-<http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/MixedMartialArts> rdf:type owl:NamedIndividual ,
-                                                                                                    ma:MartialArt ;
-                                                                                           dbp:ancestorArts <http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/Boxing> ,
-                                                                                                            <http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/BrazilianJiu-Jitsu> ,
-                                                                                                            <http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/Judo> ,
-                                                                                                            <http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/Karate> ,
-                                                                                                            <http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/MuayThai> .
+###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#MixedMartialArts
+ma:MixedMartialArts rdf:type owl:NamedIndividual ,
+                             ma:MartialArt ;
+                    dbp:ancestorArts ma:Boxing ,
+                                     ma:BrazilianJiu-Jitsu ,
+                                     ma:Judo ,
+                                     ma:Karate ,
+                                     ma:MuayThai .
 
 
-###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/MouthGuard
-<http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/MouthGuard> rdf:type owl:NamedIndividual ,
-                                                                                              ma:ProtectiveGear .
+###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#MouthGuard
+ma:MouthGuard rdf:type owl:NamedIndividual ,
+                       ma:ProtectiveGear .
 
 
-###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/MuayThai
-<http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/MuayThai> rdf:type owl:NamedIndividual ,
-                                                                                            ma:ThaiMartialArt ;
-                                                                                   dbp:ancestorArts <http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/Boxing> .
+###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#MuayThai
+ma:MuayThai rdf:type owl:NamedIndividual ,
+                     ma:ThaiMartialArt ;
+            dbp:ancestorArts ma:Boxing .
 
 
-###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/Striking
-<http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/Striking> rdf:type owl:NamedIndividual ,
-                                                                                            ma:Style .
+###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Striking
+ma:Striking rdf:type owl:NamedIndividual ,
+                     ma:Style .
 
 
-###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/TaeKwonDo
-<http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/TaeKwonDo> rdf:type owl:NamedIndividual ,
-                                                                                             ma:KoreanMartialArt ;
-                                                                                    dbp:ancestorArts <http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/TangSooDo> .
+###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#TaeKwonDo
+ma:TaeKwonDo rdf:type owl:NamedIndividual ,
+                      ma:KoreanMartialArt ;
+             dbp:ancestorArts ma:TangSooDo .
 
 
-###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/TaiChi
-<http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/TaiChi> rdf:type owl:NamedIndividual ,
-                                                                                          ma:ChineseMartialArt .
+###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#TaiChi
+ma:TaiChi rdf:type owl:NamedIndividual ,
+                   ma:ChineseMartialArt .
 
 
-###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/TangSooDo
-<http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/TangSooDo> rdf:type owl:NamedIndividual ,
-                                                                                             ma:KoreanMartialArt ;
-                                                                                    dbp:ancestorArts <http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/Karate> ;
-                                                                                    ma:uses <http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/Gloves> ,
-                                                                                            <http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/Helmet> ,
-                                                                                            <http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/MouthGuard> .
+###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#TangSooDo
+ma:TangSooDo rdf:type owl:NamedIndividual ,
+                      ma:KoreanMartialArt ;
+             dbp:ancestorArts ma:Karate ;
+             ma:uses ma:Gloves ,
+                     ma:Helmet ,
+                     ma:MouthGuard .
 
 
 ###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
