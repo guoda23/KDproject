@@ -2,6 +2,7 @@
 @prefix ma: <http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#> .
 @prefix dbp: <http://dbpedia.org/property#> .
 @prefix dbr: <http://dbpedia.org/resource#> .
+@prefix mil: <http://rdf.muninn-project.org/ontologies/military#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -74,12 +75,12 @@ dbp:focus rdf:type owl:ObjectProperty .
 #    Classes
 #################################################################
 
-###  http://crossings.github.io/term/Armament
-<http://crossings.github.io/term/Armament> owl:equivalentClass dbr:Equipment .
+###  http://crossings.github.io/term#Armament
+<http://crossings.github.io/term#Armament> owl:equivalentClass dbr:Equipment .
 
 
-###  http://crossings.github.io/term/WeaponType
-<http://crossings.github.io/term/WeaponType> owl:equivalentClass dbr:Weapon .
+###  http://crossings.github.io/term#WeaponType
+<http://crossings.github.io/term#WeaponType> owl:equivalentClass dbr:Weapon .
 
 
 ###  http://dbpedia.org/resource#Country
@@ -111,7 +112,7 @@ dbr:Weapon rdf:type owl:Class ;
 
 ###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/BladedWeapons
 <http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/BladedWeapons> rdf:type owl:Class ;
-                                                                                        rdfs:subClassOf <http://crossings.github.io/term/MeleeWeaponType> ,
+                                                                                        rdfs:subClassOf <http://crossings.github.io/term#MeleeWeaponType> ,
                                                                                                         dbr:Weapon .
 
 
@@ -180,7 +181,7 @@ dbr:Weapon rdf:type owl:Class ;
 
 ###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/StaffWeapon
 <http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44/StaffWeapon> rdf:type owl:Class ;
-                                                                                      rdfs:subClassOf <http://crossings.github.io/term/MeleeWeaponType> ,
+                                                                                      rdfs:subClassOf <http://crossings.github.io/term#MeleeWeaponType> ,
                                                                                                       dbr:Weapon .
 
 
