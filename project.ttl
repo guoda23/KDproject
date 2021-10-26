@@ -1,7 +1,7 @@
 @prefix : <http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#> .
 @prefix ma: <http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#> .
-@prefix dbp: <http://dbpedia.org/property#> .
-@prefix dbr: <http://dbpedia.org/resource#> .
+@prefix dbp: <http://dbpedia.org/property/> .
+@prefix dbr: <http://dbpedia.org/resource/> .
 @prefix git: <http://crossings.github.io/term#> .
 @prefix mil: <http://rdf.muninn-project.org/ontologies/military#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -18,28 +18,28 @@
 #    Object Properties
 #################################################################
 
-###  http://dbpedia.org/property#ancestorArts
+###  http://dbpedia.org/property/ancestorArts
 dbp:ancestorArts rdf:type owl:ObjectProperty ;
                  rdfs:subPropertyOf owl:topObjectProperty ;
                  owl:inverseOf dbp:descendantArts .
 
 
-###  http://dbpedia.org/property#country
+###  http://dbpedia.org/property/country
 dbp:country rdf:type owl:ObjectProperty ;
             rdfs:subPropertyOf owl:topObjectProperty .
 
 
-###  http://dbpedia.org/property#descendantArts
+###  http://dbpedia.org/property/descendantArts
 dbp:descendantArts rdf:type owl:ObjectProperty ;
                    owl:equivalentProperty dbp:descendants ;
                    rdfs:subPropertyOf owl:topObjectProperty .
 
 
-###  http://dbpedia.org/property#descendants
+###  http://dbpedia.org/property/descendants
 dbp:descendants rdf:type owl:ObjectProperty .
 
 
-###  http://dbpedia.org/property#focus
+###  http://dbpedia.org/property/focus
 dbp:focus rdf:type owl:ObjectProperty .
 
 
@@ -84,11 +84,11 @@ git:Armament owl:equivalentClass dbr:Equipment .
 git:WeaponType owl:equivalentClass dbr:Weapon .
 
 
-###  http://dbpedia.org/resource#Country
+###  http://dbpedia.org/resource/Country
 dbr:Country rdf:type owl:Class .
 
 
-###  http://dbpedia.org/resource#Equipment
+###  http://dbpedia.org/resource/Equipment
 dbr:Equipment rdf:type owl:Class ;
               owl:equivalentClass [ rdf:type owl:Restriction ;
                                     owl:onProperty ma:usedIn ;
@@ -96,7 +96,7 @@ dbr:Equipment rdf:type owl:Class ;
                                   ] .
 
 
-###  http://dbpedia.org/resource#Weapon
+###  http://dbpedia.org/resource/Weapon
 dbr:Weapon rdf:type owl:Class ;
            rdfs:subClassOf dbr:Equipment .
 
@@ -212,28 +212,28 @@ ma:UnarmedMartialArt rdf:type owl:Class ;
 #    Individuals
 #################################################################
 
-###  http://dbpedia.org/resource#Brazil
+###  http://dbpedia.org/resource/Brazil
 dbr:Brazil rdf:type owl:NamedIndividual .
 
 
-###  http://dbpedia.org/resource#China
+###  http://dbpedia.org/resource/China
 dbr:China rdf:type owl:NamedIndividual ,
                    dbr:Country .
 
 
-###  http://dbpedia.org/resource#India
+###  http://dbpedia.org/resource/India
 dbr:India rdf:type owl:NamedIndividual .
 
 
-###  http://dbpedia.org/resource#Japan
+###  http://dbpedia.org/resource/Japan
 dbr:Japan rdf:type owl:NamedIndividual .
 
 
-###  http://dbpedia.org/resource#Korea
+###  http://dbpedia.org/resource/Korea
 dbr:Korea rdf:type owl:NamedIndividual .
 
 
-###  http://dbpedia.org/resource#Thailand
+###  http://dbpedia.org/resource/Thailand
 dbr:Thailand rdf:type owl:NamedIndividual .
 
 
