@@ -3,274 +3,274 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 ma:Shaolin%20Kung%20Fu a ma:MartialArt;
-  rdfs:label "Shaolin Kung Fu" .
+  rdfs:label "Shaolin Kung Fu"@en .
 
 ma:Chángquán a ma:MartialArt;
-  rdfs:label "Chángquán" .
+  rdfs:label "Chángquán"@en .
 
 ma:Shuai%20Jiao a ma:MartialArt;
-  rdfs:label "Shuai Jiao" .
+  rdfs:label "Shuai Jiao"@en .
 
 ma:Shorinji%20Kempo a ma:MartialArt;
-  rdfs:label "Shorinji Kempo" .
+  rdfs:label "Shorinji Kempo"@en .
 
 ma:Tang%20Soo%20Do a ma:MartialArt;
-  rdfs:label "Tang Soo Do" .
+  rdfs:label "Tang Soo Do"@en .
 
 ma:Taekkyeon a ma:MartialArt;
-  rdfs:label "Taekkyeon" .
+  rdfs:label "Taekkyeon"@en .
 
 ma:Subak a ma:MartialArt;
-  rdfs:label "Subak" .
+  rdfs:label "Subak"@en .
 
 ma:Lathi%20Khela a ma:MartialArt;
-  rdfs:label "Lathi Khela" .
+  rdfs:label "Lathi Khela"@en .
 
 ma:Taijiquan a ma:MartialArt;
-  rdfs:label "Taijiquan";
+  rdfs:label "Taijiquan"@en;
   ma:primaryPurpose ma:Health, ma:Spiritual .
 
 ma:Health a ma:Purpose;
-  rdfs:label ma:Health .
+  rdfs:label "Health"@en .
 
 ma:Spiritual a ma:Purpose;
-  rdfs:label ma:Spiritual .
+  rdfs:label "Spiritual"@en .
 
 ma:Adithada a ma:MartialArt;
-  rdfs:label "Adithada";
+  rdfs:label "Adithada"@en;
   ma:primaryPurpose ma:Self-defence .
 
 ma:Self-defence a ma:Purpose;
-  rdfs:label ma:Self-defence .
+  rdfs:label "Self-defence"@en .
 
 ma:Hap%20Ki%20Do a ma:MartialArt;
-  rdfs:label "Hap Ki Do";
+  rdfs:label "Hap Ki Do"@en;
   ma:primaryPurpose ma:Self-defence .
 
 ma:Jūjutsu a ma:MartialArt;
-  rdfs:label "Jūjutsu";
+  rdfs:label "Jūjutsu"@en;
   ma:primaryPurpose ma:Self-defence .
 
 ma:Jeet%20Kune%20Do a ma:MartialArt;
-  rdfs:label "Jeet Kune Do";
+  rdfs:label "Jeet Kune Do"@en;
   ma:primaryPurpose ma:Self-defence .
 
 ma:Krav%20Maga a ma:MartialArt;
-  rdfs:label "Krav Maga";
+  rdfs:label "Krav Maga"@en;
   ma:primaryPurpose ma:Self-defence .
 
 <http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Arnis%20%28Kali/%20Eskrima%29>
   a ma:MartialArt;
-  rdfs:label "Arnis (Kali/ Eskrima)";
+  rdfs:label "Arnis (Kali/ Eskrima)"@en;
   ma:primaryPurpose ma:Self-defence .
 
 ma:Silat a ma:MartialArt;
-  rdfs:label "Silat";
+  rdfs:label "Silat"@en;
   ma:primaryPurpose ma:Self-defence .
 
 ma:Sambo a ma:MartialArt;
-  rdfs:label "Sambo";
+  rdfs:label "Sambo"@en;
   ma:primaryPurpose ma:Self-defence .
 
 ma:Wing%20Chun%20Kuen a ma:MartialArt;
-  rdfs:label "Wing Chun Kuen";
+  rdfs:label "Wing Chun Kuen"@en;
   ma:primaryPurpose ma:Self-defence .
 
 ma:Ying%20Quan a ma:MartialArt;
-  rdfs:label "Ying Quan";
+  rdfs:label "Ying Quan"@en;
   ma:primaryPurpose ma:Self-defence .
 
 ma:Ninjutsu a ma:MartialArt;
-  rdfs:label "Ninjutsu";
+  rdfs:label "Ninjutsu"@en;
   ma:primaryPurpose ma:Self-defence .
 
 ma:Silambam a ma:MartialArt;
-  rdfs:label "Silambam";
+  rdfs:label "Silambam"@en;
   ma:primaryPurpose ma:Self-defence .
 
 ma:Pehlwani a ma:MartialArt;
-  rdfs:label "Pehlwani";
+  rdfs:label "Pehlwani"@en;
   ma:primaryPurpose ma:Self-defence .
 
 ma:Gatka a ma:MartialArt;
-  rdfs:label "Gatka";
+  rdfs:label "Gatka"@en;
   ma:primaryPurpose ma:Self-defence .
 
 ma:Nguni%20Stick%20Fighting a ma:MartialArt;
-  rdfs:label "Nguni Stick Fighting";
+  rdfs:label "Nguni Stick Fighting"@en;
   ma:primaryPurpose ma:Self-defence .
 
 ma:Fānziquán a ma:MartialArt;
-  rdfs:label "Fānziquán";
+  rdfs:label "Fānziquán"@en;
   ma:primaryPurpose ma:Self-defence .
 
 ma:Piguaquan a ma:MartialArt;
-  rdfs:label "Piguaquan";
+  rdfs:label "Piguaquan"@en;
   ma:primaryPurpose ma:Self-defence .
 
 ma:Tahtib a ma:MartialArt;
-  rdfs:label "Tahtib";
+  rdfs:label "Tahtib"@en;
   ma:primaryPurpose ma:Self-defence .
 
 ma:Daitō-ryū%20Aiki-jūjutsu a ma:MartialArt;
-  rdfs:label "Daitō-ryū Aiki-jūjutsu";
+  rdfs:label "Daitō-ryū Aiki-jūjutsu"@en;
   ma:primaryPurpose ma:Self-defence .
 
 ma:Bafaquan a ma:MartialArt;
-  rdfs:label "Bafaquan";
+  rdfs:label "Bafaquan"@en;
   ma:primaryPurpose ma:Self-defence .
 
 ma:Bajiquan a ma:MartialArt;
-  rdfs:label "Bajiquan";
+  rdfs:label "Bajiquan"@en;
   ma:primaryPurpose ma:Self-defence .
 
 ma:Bak%20Mei a ma:MartialArt;
-  rdfs:label "Bak Mei";
+  rdfs:label "Bak Mei"@en;
   ma:primaryPurpose ma:Self-defence .
 
 ma:Kyusho%20Jitsu a ma:MartialArt;
-  rdfs:label "Kyusho Jitsu";
+  rdfs:label "Kyusho Jitsu"@en;
   ma:primaryPurpose ma:Self-defence .
 
 ma:Vovinam a ma:MartialArt;
-  rdfs:label "Vovinam";
+  rdfs:label "Vovinam"@en;
   ma:primaryPurpose ma:Self-defence .
 
 ma:Kajukenbo a ma:MartialArt;
-  rdfs:label "Kajukenbo";
+  rdfs:label "Kajukenbo"@en;
   ma:primaryPurpose ma:Self-defence .
 
 ma:Systema a ma:MartialArt;
-  rdfs:label "Systema";
+  rdfs:label "Systema"@en;
   ma:primaryPurpose ma:Self-defence .
 
 ma:Bartitsu a ma:MartialArt;
-  rdfs:label "Bartitsu";
+  rdfs:label "Bartitsu"@en;
   ma:primaryPurpose ma:Self-defence .
 
 ma:Soo%20Bahk%20Do a ma:MartialArt;
-  rdfs:label "Soo Bahk Do";
+  rdfs:label "Soo Bahk Do"@en;
   ma:primaryPurpose ma:Self-defence .
 
 ma:Taidō a ma:MartialArt;
-  rdfs:label "Taidō";
+  rdfs:label "Taidō"@en;
   ma:primaryPurpose ma:Self-defence, ma:Health .
 
 ma:Kalaripayattu a ma:MartialArt;
-  rdfs:label "Kalaripayattu";
+  rdfs:label "Kalaripayattu"@en;
   ma:primaryPurpose ma:Self-defence, ma:Health, ma:Spiritual .
 
 ma:Hung%20Ga%20Kuen a ma:MartialArt;
-  rdfs:label "Hung Ga Kuen";
+  rdfs:label "Hung Ga Kuen"@en;
   ma:primaryPurpose ma:Self-defence, ma:Health, ma:Spiritual .
 
 ma:Aikido a ma:MartialArt;
-  rdfs:label "Aikido";
+  rdfs:label "Aikido"@en;
   ma:primaryPurpose ma:Self-defence, ma:Spiritual .
 
 ma:Baguazhang a ma:MartialArt;
-  rdfs:label "Baguazhang";
+  rdfs:label "Baguazhang"@en;
   ma:primaryPurpose ma:Self-defence, ma:Spiritual .
 
 ma:Capoeira a ma:MartialArt;
-  rdfs:label "Capoeira";
+  rdfs:label "Capoeira"@en;
   ma:primaryPurpose ma:Spiritual .
 
 ma:Kendo a ma:MartialArt;
-  rdfs:label "Kendo";
+  rdfs:label "Kendo"@en;
   ma:primaryPurpose ma:Spiritual .
 
 ma:Engolo a ma:MartialArt;
-  rdfs:label "Engolo";
+  rdfs:label "Engolo"@en;
   ma:primaryPurpose ma:Spiritual .
 
 ma:Istunka a ma:MartialArt;
-  rdfs:label "Istunka";
+  rdfs:label "Istunka"@en;
   ma:primaryPurpose ma:Spiritual .
 
 ma:Kyūdō a ma:MartialArt;
-  rdfs:label "Kyūdō";
+  rdfs:label "Kyūdō"@en;
   ma:primaryPurpose ma:Spiritual .
 
 ma:Iaido a ma:MartialArt;
-  rdfs:label "Iaido";
+  rdfs:label "Iaido"@en;
   ma:primaryPurpose ma:Spiritual .
 
 ma:Taekwondo a ma:MartialArt;
-  rdfs:label "Taekwondo";
+  rdfs:label "Taekwondo"@en;
   ma:primaryPurpose ma:Sport .
 
 ma:Sport a ma:Purpose;
-  rdfs:label ma:Sport .
+  rdfs:label "Sport"@en .
 
 ma:Nuba%20Fighting a ma:MartialArt;
-  rdfs:label "Nuba Fighting";
+  rdfs:label "Nuba Fighting"@en;
   ma:primaryPurpose ma:Sport .
 
 ma:Luta%20Livre a ma:MartialArt;
-  rdfs:label "Luta Livre";
+  rdfs:label "Luta Livre"@en;
   ma:primaryPurpose ma:Sport .
 
 ma:Vale%20Tudo a ma:MartialArt;
-  rdfs:label "Vale Tudo";
+  rdfs:label "Vale Tudo"@en;
   ma:primaryPurpose ma:Sport .
 
 ma:Sumo a ma:MartialArt;
-  rdfs:label "Sumo";
+  rdfs:label "Sumo"@en;
   ma:primaryPurpose ma:Sport .
 
 ma:Pankration a ma:MartialArt;
-  rdfs:label "Pankration";
+  rdfs:label "Pankration"@en;
   ma:primaryPurpose ma:Sport .
 
 ma:Boxing a ma:MartialArt;
-  rdfs:label "Boxing";
+  rdfs:label "Boxing"@en;
   ma:primaryPurpose ma:Sport, ma:Self-defence .
 
 ma:Muay%20Thai a ma:MartialArt;
-  rdfs:label "Muay Thai";
+  rdfs:label "Muay Thai"@en;
   ma:primaryPurpose ma:Sport, ma:Self-defence .
 
 ma:Judo a ma:MartialArt;
-  rdfs:label "Judo";
+  rdfs:label "Judo"@en;
   ma:primaryPurpose ma:Sport, ma:Self-defence .
 
 ma:Karate%20Do a ma:MartialArt;
-  rdfs:label "Karate Do";
+  rdfs:label "Karate Do"@en;
   ma:primaryPurpose ma:Sport, ma:Self-defence .
 
 ma:Kickboxing a ma:MartialArt;
-  rdfs:label "Kickboxing";
+  rdfs:label "Kickboxing"@en;
   ma:primaryPurpose ma:Sport, ma:Self-defence .
 
 ma:Wrestling a ma:MartialArt;
-  rdfs:label "Wrestling";
+  rdfs:label "Wrestling"@en;
   ma:primaryPurpose ma:Sport, ma:Self-defence .
 
 ma:Brazilian%20Jiu-Jitsu a ma:MartialArt;
-  rdfs:label "Brazilian Jiu-Jitsu";
+  rdfs:label "Brazilian Jiu-Jitsu"@en;
   ma:primaryPurpose ma:Sport, ma:Self-defence .
 
 ma:Sanda a ma:MartialArt;
-  rdfs:label "Sanda";
+  rdfs:label "Sanda"@en;
   ma:primaryPurpose ma:Sport, ma:Self-defence .
 
 ma:Dambe a ma:MartialArt;
-  rdfs:label "Dambe";
+  rdfs:label "Dambe"@en;
   ma:primaryPurpose ma:Sport, ma:Self-defence .
 
 ma:Savate a ma:MartialArt;
-  rdfs:label "Savate";
+  rdfs:label "Savate"@en;
   ma:primaryPurpose ma:Sport, ma:Self-defence .
 
 ma:Lethwei a ma:MartialArt;
-  rdfs:label "Lethwei";
+  rdfs:label "Lethwei"@en;
   ma:primaryPurpose ma:Sport, ma:Self-defence .
 
 ma:Moraingy a ma:MartialArt;
-  rdfs:label "Moraingy";
+  rdfs:label "Moraingy"@en;
   ma:primaryPurpose ma:Sport, ma:Spiritual .
 
 ma:Huka-Huka a ma:MartialArt;
-  rdfs:label "Huka-Huka";
+  rdfs:label "Huka-Huka"@en;
   ma:primaryPurpose ma:Sport, ma:Spiritual .
