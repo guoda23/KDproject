@@ -235,8 +235,8 @@ ma:Judo a ma:MartialArt;
   rdfs:label "Judo"@en;
   ma:primaryPurpose ma:Sport, ma:Self-defence .
 
-ma:Karate%20Do a ma:MartialArt;
-  rdfs:label "Karate Do"@en;
+ma:Karate a ma:MartialArt;
+  rdfs:label "Karate"@en;
   ma:primaryPurpose ma:Sport, ma:Self-defence .
 
 ma:Kickboxing a ma:MartialArt;

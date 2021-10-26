@@ -68,8 +68,8 @@ ma:Muay%20Thai a ma:MartialArt;
   rdfs:label "Muay Thai"@en;
   ma:primaryTechnicalFocus ma:Striking .
 
-ma:Karate%20Do a ma:MartialArt;
-  rdfs:label "Karate Do"@en;
+ma:Karate a ma:MartialArt;
+  rdfs:label "Karate"@en;
   ma:primaryTechnicalFocus ma:Striking .
 
 ma:Taekwondo a ma:MartialArt;

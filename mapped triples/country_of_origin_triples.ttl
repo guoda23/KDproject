@@ -166,8 +166,8 @@ ma:Aikido a ma:MartialArt;
   rdfs:label "Aikido"@en;
   dbp:country dbr:Japan .
 
-ma:Karate%20Do a ma:MartialArt;
-  rdfs:label "Karate Do"@en;
+ma:Karate a ma:MartialArt;
+  rdfs:label "Karate"@en;
   dbp:country dbr:Japan .
 
 ma:Taidō a ma:MartialArt;
