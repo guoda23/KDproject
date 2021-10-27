@@ -2,6 +2,7 @@
 @prefix ma: <http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#> .
 @prefix dbp: <http://dbpedia.org/property/> .
 @prefix dbr: <http://dbpedia.org/resource/> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
 @prefix git: <http://crossings.github.io/term#> .
 @prefix mil: <http://rdf.muninn-project.org/ontologies/military#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -28,6 +29,10 @@ dbp:ancestorArts rdf:type owl:ObjectProperty ;
                  rdf:type owl:TransitiveProperty .
 
 
+###  http://dbpedia.org/property/city
+dbp:city rdf:type owl:ObjectProperty .
+
+
 ###  http://dbpedia.org/property/country
 dbp:country rdf:type owl:ObjectProperty ;
             rdfs:subPropertyOf owl:topObjectProperty .
@@ -47,6 +52,18 @@ dbp:descendants rdf:type owl:ObjectProperty ,
 
 ###  http://dbpedia.org/property/focus
 dbp:focus rdf:type owl:ObjectProperty .
+
+
+###  http://dbpedia.org/property/municipality
+dbp:municipality rdf:type owl:ObjectProperty .
+
+
+###  http://dbpedia.org/property/province
+dbp:province rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#accomodatesSportType
+ma:accomodatesSportType rdf:type owl:ObjectProperty .
 
 
 ###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#hasOrigin
@@ -79,6 +96,26 @@ ma:uses rdf:type owl:ObjectProperty ;
 
 
 #################################################################
+#    Data properties
+#################################################################
+
+###  http://dbpedia.org/property/postcode
+dbp:postcode rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#streetAndNumber
+ma:streetAndNumber rdf:type owl:DatatypeProperty .
+
+
+###  http://www.w3.org/2003/01/geo/wgs84_pos#lat
+geo:lat rdf:type owl:DatatypeProperty .
+
+
+###  http://www.w3.org/2003/01/geo/wgs84_pos#long
+geo:long rdf:type owl:DatatypeProperty .
+
+
+#################################################################
 #    Classes
 #################################################################
 
@@ -91,7 +128,8 @@ git:WeaponType owl:equivalentClass dbr:Weapon .
 
 
 ###  http://dbpedia.org/resource/Country
-dbr:Country rdf:type owl:Class .
+dbr:Country rdf:type owl:Class ;
+            rdfs:subClassOf ma:Location .
 
 
 ###  http://dbpedia.org/resource/Equipment
@@ -102,9 +140,32 @@ dbr:Equipment rdf:type owl:Class ;
                                   ] .
 
 
+###  http://dbpedia.org/resource/Facility
+dbr:Facility rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty ma:streetAndNumber ;
+                               owl:cardinality "1"^^xsd:nonNegativeInteger
+                             ] .
+
+
+###  http://dbpedia.org/resource/Municipalities_of_the_Netherlands
+dbr:Municipalities_of_the_Netherlands rdf:type owl:Class ;
+                                      rdfs:subClassOf ma:Location .
+
+
+###  http://dbpedia.org/resource/Provinces_of_the_Netherlands
+dbr:Provinces_of_the_Netherlands rdf:type owl:Class ;
+                                 rdfs:subClassOf ma:Location .
+
+
 ###  http://dbpedia.org/resource/Weapon
 dbr:Weapon rdf:type owl:Class ;
            rdfs:subClassOf dbr:Equipment .
+
+
+###  http://dbpedia.org/resource/Category:Cities_in_the_Netherlands
+dbr:Category:Cities_in_the_Netherlands rdf:type owl:Class ;
+                                       rdfs:subClassOf ma:Location .
 
 
 ###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#ArmedMartialArt
@@ -168,6 +229,10 @@ ma:KoreanMartialArt rdf:type owl:Class ;
                     rdfs:subClassOf ma:MartialArt .
 
 
+###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Location
+ma:Location rdf:type owl:Class .
+
+
 ###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#MartialArt
 ma:MartialArt rdf:type owl:Class ;
               owl:equivalentClass [ rdf:type owl:Restriction ;
@@ -184,6 +249,10 @@ ma:ProtectiveGear rdf:type owl:Class ;
 
 ###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Purpose
 ma:Purpose rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#SportType
+ma:SportType rdf:type owl:Class .
 
 
 ###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#StaffWeapon
@@ -418,9 +487,15 @@ ma:TangSooDo rdf:type owl:NamedIndividual ,
 
 
 ###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Brazilian%20Jiu-Jitsu
+<http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Brazilian%20Jiu-Jitsu> rdf:type owl:NamedIndividual .
+
 
 ###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Hap%20Ki%20Do
+<http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Hap%20Ki%20Do> rdf:type owl:NamedIndividual .
+
 
 ###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Tang%20Soo%20Do
+<http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Tang%20Soo%20Do> rdf:type owl:NamedIndividual .
+
 
 ###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
