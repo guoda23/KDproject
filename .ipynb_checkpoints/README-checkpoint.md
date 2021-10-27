@@ -7,7 +7,3 @@ project.ttl contains our ontology with an integrated ontology martialmotion.ttl.
 External data set folder contains three datasets we have mapped to our ontology.
 
 Mapped tripples include the .ttl files including all of the mapped RDF triples. These files were downloaded from Graphdb.
-
-=====================
-
-In order to use the ontology, import the three .ttl files in 'mapped triples', 'along with project.ttl', into graphDB. 
