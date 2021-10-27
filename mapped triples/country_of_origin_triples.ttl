@@ -1,8 +1,8 @@
 @base <http://example.com/base/> .
 @prefix ma: <http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix dbp: <http://dbpedia.org/property#> .
-@prefix dbr: <http://dbpedia.org/resource#> .
+@prefix dbp: <http://dbpedia.org/property/> .
+@prefix dbr: <http://dbpedia.org/resource/> .
 
 ma:Engolo a ma:MartialArt;
   rdfs:label "Engolo"@en;
