@@ -15,6 +15,7 @@
                                                                            owl:imports <file:/C:/Users/tangs/Documents/VU%20stuff/Knowledge%20and%20Data/KDproject/mapped%20triples/country_of_origin_triples.ttl> ,
                                                                                        <file:/C:/Users/tangs/Documents/VU%20stuff/Knowledge%20and%20Data/KDproject/mapped%20triples/primary_purpose_triples.ttl> ,
                                                                                        <file:/C:/Users/tangs/Documents/VU%20stuff/Knowledge%20and%20Data/KDproject/mapped%20triples/primary_technical_focus_triples.ttl> ,
+                                                                                       <file:/C:/Users/tangs/Documents/VU%20stuff/Knowledge%20and%20Data/KDproject/mapped%20triples/sport_locations_triples.ttl> ,
                                                                                        <http://crossings.github.io/ont/martialmotion> .
 
 #################################################################
@@ -286,8 +287,13 @@ ma:UnarmedMartialArt rdf:type owl:Class ;
 #    Individuals
 #################################################################
 
+###  http://dbpedia.org/resource/Angola
+dbr:Angola rdf:type dbr:Country .
+
+
 ###  http://dbpedia.org/resource/Brazil
-dbr:Brazil rdf:type owl:NamedIndividual ;
+dbr:Brazil rdf:type owl:NamedIndividual ,
+                    dbr:Country ;
            rdfs:label "Brazil"@en .
 
 
@@ -297,29 +303,100 @@ dbr:China rdf:type owl:NamedIndividual ,
           rdfs:label "China"@en .
 
 
+###  http://dbpedia.org/resource/Egypt
+dbr:Egypt rdf:type dbr:Country .
+
+
+###  http://dbpedia.org/resource/France
+dbr:France rdf:type dbr:Country .
+
+
+###  http://dbpedia.org/resource/Greece
+dbr:Greece rdf:type dbr:Country .
+
+
 ###  http://dbpedia.org/resource/India
-dbr:India rdf:type owl:NamedIndividual ;
+dbr:India rdf:type owl:NamedIndividual ,
+                   dbr:Country ;
           rdfs:label "India"@en .
 
 
 ###  http://dbpedia.org/resource/Japan
-dbr:Japan rdf:type owl:NamedIndividual ;
+dbr:Japan rdf:type owl:NamedIndividual ,
+                   dbr:Country ;
           rdfs:label "Japan"@en .
 
 
 ###  http://dbpedia.org/resource/Korea
-dbr:Korea rdf:type owl:NamedIndividual ;
+dbr:Korea rdf:type owl:NamedIndividual ,
+                   dbr:Country ;
           rdfs:label "Korea"@en .
 
 
+###  http://dbpedia.org/resource/Madagascar
+dbr:Madagascar rdf:type dbr:Country .
+
+
+###  http://dbpedia.org/resource/Malaysia
+dbr:Malaysia rdf:type dbr:Country .
+
+
+###  http://dbpedia.org/resource/Myanmar
+dbr:Myanmar rdf:type dbr:Country .
+
+
+###  http://dbpedia.org/resource/Nigeria
+dbr:Nigeria rdf:type dbr:Country .
+
+
+###  http://dbpedia.org/resource/Philippines
+dbr:Philippines rdf:type dbr:Country .
+
+
+###  http://dbpedia.org/resource/Russia
+dbr:Russia rdf:type dbr:Country .
+
+
+###  http://dbpedia.org/resource/Somalia
+dbr:Somalia rdf:type dbr:Country .
+
+
+###  http://dbpedia.org/resource/Sudan
+dbr:Sudan rdf:type dbr:Country .
+
+
 ###  http://dbpedia.org/resource/Thailand
-dbr:Thailand rdf:type owl:NamedIndividual ;
+dbr:Thailand rdf:type owl:NamedIndividual ,
+                      dbr:Country ;
              rdfs:label "Thailand"@en .
 
 
+###  http://dbpedia.org/resource/Vietnam
+dbr:Vietnam rdf:type dbr:Country .
+
+
+###  http://dbpedia.org/resource/Czech%20Republic
+<http://dbpedia.org/resource/Czech%20Republic> rdf:type dbr:Country .
+
+
+###  http://dbpedia.org/resource/South%20Africa
+<http://dbpedia.org/resource/South%20Africa> rdf:type dbr:Country .
+
+
+###  http://dbpedia.org/resource/United%20Kingdom
+<http://dbpedia.org/resource/United%20Kingdom> rdf:type dbr:Country .
+
+
+###  http://dbpedia.org/resource/United%20States%20of%20America
+<http://dbpedia.org/resource/United%20States%20of%20America> rdf:type dbr:Country .
+
+
 ###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Adithada
-ma:Adithada rdf:type owl:NamedIndividual ;
+ma:Adithada rdf:type owl:NamedIndividual ,
+                     ma:MartialArt ;
             dbp:country dbr:India ;
+            ma:primaryPurpose ma:Self-defence ;
+            ma:primaryTechnicalFocus ma:Striking ;
             rdfs:label "Adithada"@en .
 
 
@@ -327,6 +404,58 @@ ma:Adithada rdf:type owl:NamedIndividual ;
 ma:AiKiDo rdf:type owl:NamedIndividual ,
                    ma:JapaneseMartialArt ;
           rdfs:label "Ai Ki Do"@en .
+
+
+###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Aikido
+ma:Aikido rdf:type ma:MartialArt ;
+          dbp:country dbr:Japan ;
+          ma:primaryPurpose ma:Self-defence ,
+                            ma:Spiritual ;
+          ma:primaryTechnicalFocus ma:Takedowns ,
+                                   ma:Throwing ;
+          rdfs:label "Aikido"@en .
+
+
+###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Bafaquan
+ma:Bafaquan rdf:type ma:MartialArt ;
+            dbp:country dbr:China ;
+            ma:primaryPurpose ma:Self-defence ;
+            ma:primaryTechnicalFocus ma:Striking ,
+                                     ma:Weapons ;
+            rdfs:label "Bafaquan"@en .
+
+
+###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Baguazhang
+ma:Baguazhang rdf:type ma:MartialArt ;
+              dbp:country dbr:China ;
+              ma:primaryPurpose ma:Self-defence ,
+                                ma:Spiritual ;
+              ma:primaryTechnicalFocus ma:Joint-locks ,
+                                       ma:Striking ,
+                                       ma:Takedowns ,
+                                       ma:Throwing ,
+                                       ma:Weapons ;
+              rdfs:label "Baguazhang"@en .
+
+
+###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Bajiquan
+ma:Bajiquan rdf:type ma:MartialArt ;
+            dbp:country dbr:China ;
+            ma:primaryPurpose ma:Self-defence ;
+            ma:primaryTechnicalFocus ma:Striking ;
+            rdfs:label "Bajiquan"@en .
+
+
+###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Bartitsu
+ma:Bartitsu rdf:type ma:MartialArt ;
+            dbp:country <http://dbpedia.org/resource/United%20Kingdom> ;
+            ma:primaryPurpose ma:Self-defence ;
+            ma:primaryTechnicalFocus ma:Joint-locks ,
+                                     ma:Striking ,
+                                     ma:Takedowns ,
+                                     ma:Throwing ,
+                                     ma:Weapons ;
+            rdfs:label "Bartitsu"@en .
 
 
 ###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#BoStaff
@@ -338,6 +467,11 @@ ma:BoStaff rdf:type owl:NamedIndividual ,
 ###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Boxing
 ma:Boxing rdf:type owl:NamedIndividual ,
                    ma:MartialArt ;
+          owl:sameAs ma:boksen ;
+          dbp:country <http://dbpedia.org/resource/United%20Kingdom> ;
+          ma:primaryPurpose ma:Self-defence ,
+                            ma:Sport ;
+          ma:primaryTechnicalFocus ma:Striking ;
           rdfs:label "Boxing"@en .
 
 
@@ -348,6 +482,54 @@ ma:BrazilianJiu-Jitsu rdf:type owl:NamedIndividual ,
                       dbp:ancestorArts ma:Judo ;
                       rdfs:label "BJJ"@en ,
                                  "Brazilian Jiu-Jitsu"@en .
+
+
+###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Capoeira
+ma:Capoeira rdf:type ma:MartialArt ;
+            dbp:country dbr:Brazil ;
+            ma:primaryPurpose ma:Spiritual ;
+            ma:primaryTechnicalFocus ma:Striking ;
+            rdfs:label "Capoeira"@en .
+
+
+###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Chángquán
+ma:Chángquán rdf:type ma:MartialArt ;
+             dbp:country dbr:China ;
+             ma:primaryTechnicalFocus ma:Striking ;
+             rdfs:label "Chángquán"@en .
+
+
+###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Dambe
+ma:Dambe rdf:type ma:MartialArt ;
+         dbp:country dbr:Nigeria ;
+         ma:primaryPurpose ma:Self-defence ,
+                           ma:Sport ;
+         ma:primaryTechnicalFocus ma:Striking ;
+         rdfs:label "Dambe"@en .
+
+
+###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Engolo
+ma:Engolo rdf:type ma:MartialArt ;
+          dbp:country dbr:Angola ;
+          ma:primaryPurpose ma:Spiritual ;
+          ma:primaryTechnicalFocus ma:Striking ;
+          rdfs:label "Engolo"@en .
+
+
+###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Fānziquán
+ma:Fānziquán rdf:type ma:MartialArt ;
+             dbp:country dbr:China ;
+             ma:primaryPurpose ma:Self-defence ;
+             ma:primaryTechnicalFocus ma:Striking ;
+             rdfs:label "Fānziquán"@en .
+
+
+###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Gatka
+ma:Gatka rdf:type ma:MartialArt ;
+         dbp:country dbr:India ;
+         ma:primaryPurpose ma:Self-defence ;
+         ma:primaryTechnicalFocus ma:Weapons ;
+         rdfs:label "Gatka"@en .
 
 
 ###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Gloves
@@ -375,10 +557,26 @@ ma:HapKiDo rdf:type owl:NamedIndividual ,
            rdfs:label "Hap Ki Do"@en .
 
 
+###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Health
+ma:Health rdf:type ma:Purpose ;
+          rdfs:label "Health"@en .
+
+
 ###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Helmet
 ma:Helmet rdf:type owl:NamedIndividual ,
                    ma:ProtectiveGear ;
           rdfs:label "Helmet"@en .
+
+
+###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Huka-Huka
+ma:Huka-Huka rdf:type ma:MartialArt ;
+             dbp:country dbr:Brazil ;
+             ma:primaryPurpose ma:Spiritual ,
+                               ma:Sport ;
+             ma:primaryTechnicalFocus ma:Joint-locks ,
+                                      ma:Takedowns ,
+                                      ma:Throwing ;
+             rdfs:label "Huka-Huka"@en .
 
 
 ###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Hybrid
@@ -387,10 +585,31 @@ ma:Hybrid rdf:type owl:NamedIndividual ,
           rdfs:label "Hybrid"@en .
 
 
+###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Iaido
+ma:Iaido rdf:type ma:MartialArt ;
+         dbp:country dbr:Japan ;
+         ma:primaryPurpose ma:Spiritual ;
+         ma:primaryTechnicalFocus ma:Weapons ;
+         rdfs:label "Iaido"@en .
+
+
 ###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Internal
 ma:Internal rdf:type owl:NamedIndividual ,
                      ma:Style ;
             rdfs:label "Internal"@en .
+
+
+###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Istunka
+ma:Istunka rdf:type ma:MartialArt ;
+           dbp:country dbr:Somalia ;
+           ma:primaryPurpose ma:Spiritual ;
+           ma:primaryTechnicalFocus ma:Weapons ;
+           rdfs:label "Istunka"@en .
+
+
+###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Joint-locks
+ma:Joint-locks rdf:type ma:Technique ;
+               rdfs:label "Joint-locks"@en .
 
 
 ###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#JuJitsu
@@ -402,16 +621,65 @@ ma:JuJitsu rdf:type owl:NamedIndividual ,
 
 ###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Judo
 ma:Judo rdf:type owl:NamedIndividual ,
-                 ma:JapaneseMartialArt ;
+                 ma:JapaneseMartialArt ,
+                 ma:MartialArt ;
+        owl:sameAs ma:judo ;
         dbp:ancestorArts ma:JuJitsu ;
+        dbp:country dbr:Japan ;
         dbp:focus ma:Grappling ;
+        ma:primaryPurpose ma:Self-defence ,
+                          ma:Sport ;
+        ma:primaryTechnicalFocus ma:Joint-locks ,
+                                 ma:Takedowns ,
+                                 ma:Throwing ;
         rdfs:label "Judo"@en .
+
+
+###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Jūjutsu
+ma:Jūjutsu rdf:type ma:MartialArt ;
+           dbp:country dbr:Japan ;
+           ma:primaryPurpose ma:Self-defence ;
+           ma:primaryTechnicalFocus ma:Joint-locks ,
+                                    ma:Takedowns ,
+                                    ma:Throwing ;
+           rdfs:label "Jūjutsu"@en .
+
+
+###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Kajukenbo
+ma:Kajukenbo rdf:type ma:MartialArt ;
+             dbp:country <http://dbpedia.org/resource/United%20States%20of%20America> ;
+             ma:primaryPurpose ma:Self-defence ;
+             ma:primaryTechnicalFocus ma:Joint-locks ,
+                                      ma:Striking ,
+                                      ma:Takedowns ,
+                                      ma:Throwing ;
+             rdfs:label "Kajukenbo"@en .
+
+
+###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Kalaripayattu
+ma:Kalaripayattu rdf:type ma:MartialArt ;
+                 dbp:country dbr:India ;
+                 ma:primaryPurpose ma:Health ,
+                                   ma:Self-defence ,
+                                   ma:Spiritual ;
+                 ma:primaryTechnicalFocus ma:Joint-locks ,
+                                          ma:Striking ,
+                                          ma:Takedowns ,
+                                          ma:Throwing ,
+                                          ma:Weapons ;
+                 rdfs:label "Kalaripayattu"@en .
 
 
 ###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Karate
 ma:Karate rdf:type owl:NamedIndividual ,
-                   ma:JapaneseMartialArt ;
+                   ma:JapaneseMartialArt ,
+                   ma:MartialArt ;
+          owl:sameAs ma:karate ;
           dbp:ancestorArts ma:KungFu ;
+          dbp:country dbr:Japan ;
+          ma:primaryPurpose ma:Self-defence ,
+                            ma:Sport ;
+          ma:primaryTechnicalFocus ma:Striking ;
           ma:uses ma:BoStaff ,
                   ma:GroinGuard ,
                   ma:Helmet ;
@@ -424,10 +692,44 @@ ma:Katana rdf:type owl:NamedIndividual ,
           rdfs:label "Katana"@en .
 
 
+###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Kendo
+ma:Kendo rdf:type ma:MartialArt ;
+         dbp:country dbr:Japan ;
+         ma:primaryPurpose ma:Spiritual ;
+         ma:primaryTechnicalFocus ma:Weapons ;
+         rdfs:label "Kendo"@en .
+
+
+###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Kickboxing
+ma:Kickboxing rdf:type ma:MartialArt ;
+              dbp:country dbr:Thailand ;
+              ma:primaryPurpose ma:Self-defence ,
+                                ma:Sport ;
+              ma:primaryTechnicalFocus ma:Striking ;
+              rdfs:label "Kickboxing"@en .
+
+
 ###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#KungFu
 ma:KungFu rdf:type owl:NamedIndividual ,
                    ma:ChineseMartialArt ;
           rdfs:label "Kung Fu"@en .
+
+
+###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Kyūdō
+ma:Kyūdō rdf:type ma:MartialArt ;
+         dbp:country dbr:Japan ;
+         ma:primaryPurpose ma:Spiritual ;
+         ma:primaryTechnicalFocus ma:Weapons ;
+         rdfs:label "Kyūdō"@en .
+
+
+###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Lethwei
+ma:Lethwei rdf:type ma:MartialArt ;
+           dbp:country dbr:Myanmar ;
+           ma:primaryPurpose ma:Self-defence ,
+                             ma:Sport ;
+           ma:primaryTechnicalFocus ma:Striking ;
+           rdfs:label "Lethwei"@en .
 
 
 ###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#MixedMartialArts
@@ -440,6 +742,15 @@ ma:MixedMartialArts rdf:type owl:NamedIndividual ,
                                      ma:MuayThai ;
                     rdfs:label "MMA"@en ,
                                "MixedMartialArts"@en .
+
+
+###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Moraingy
+ma:Moraingy rdf:type ma:MartialArt ;
+            dbp:country dbr:Madagascar ;
+            ma:primaryPurpose ma:Spiritual ,
+                              ma:Sport ;
+            ma:primaryTechnicalFocus ma:Striking ;
+            rdfs:label "Moraingy"@en .
 
 
 ###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#MouthGuard
@@ -455,10 +766,140 @@ ma:MuayThai rdf:type owl:NamedIndividual ,
             rdfs:label "Muay Thai"@en .
 
 
+###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Ninjutsu
+ma:Ninjutsu rdf:type ma:MartialArt ;
+            dbp:country dbr:Japan ;
+            ma:primaryPurpose ma:Self-defence ;
+            ma:primaryTechnicalFocus ma:Joint-locks ,
+                                     ma:Striking ,
+                                     ma:Takedowns ,
+                                     ma:Throwing ,
+                                     ma:Weapons ;
+            rdfs:label "Ninjutsu"@en .
+
+
+###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Pankration
+ma:Pankration rdf:type ma:MartialArt ;
+              dbp:country dbr:Greece ;
+              ma:primaryPurpose ma:Sport ;
+              ma:primaryTechnicalFocus ma:Joint-locks ,
+                                       ma:Striking ,
+                                       ma:Takedowns ,
+                                       ma:Throwing ;
+              rdfs:label "Pankration"@en .
+
+
+###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Pehlwani
+ma:Pehlwani rdf:type ma:MartialArt ;
+            dbp:country dbr:India ;
+            ma:primaryPurpose ma:Self-defence ;
+            ma:primaryTechnicalFocus ma:Joint-locks ,
+                                     ma:Takedowns ,
+                                     ma:Throwing ;
+            rdfs:label "Pehlwani"@en .
+
+
+###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Piguaquan
+ma:Piguaquan rdf:type ma:MartialArt ;
+             dbp:country dbr:China ;
+             ma:primaryPurpose ma:Self-defence ;
+             ma:primaryTechnicalFocus ma:Striking ,
+                                      ma:Weapons ;
+             rdfs:label "Piguaquan"@en .
+
+
+###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Sambo
+ma:Sambo rdf:type ma:MartialArt ;
+         dbp:country dbr:Russia ;
+         ma:primaryPurpose ma:Self-defence ;
+         ma:primaryTechnicalFocus ma:Joint-locks ,
+                                  ma:Striking ,
+                                  ma:Takedowns ,
+                                  ma:Throwing ;
+         rdfs:label "Sambo"@en .
+
+
+###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Sanda
+ma:Sanda rdf:type ma:MartialArt ;
+         dbp:country dbr:China ;
+         ma:primaryPurpose ma:Self-defence ,
+                           ma:Sport ;
+         ma:primaryTechnicalFocus ma:Striking ;
+         rdfs:label "Sanda"@en .
+
+
+###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Savate
+ma:Savate rdf:type ma:MartialArt ;
+          dbp:country dbr:France ;
+          ma:primaryPurpose ma:Self-defence ,
+                            ma:Sport ;
+          ma:primaryTechnicalFocus ma:Striking ;
+          rdfs:label "Savate"@en .
+
+
+###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Self-defence
+ma:Self-defence rdf:type ma:Purpose ;
+                rdfs:label "Self-defence"@en .
+
+
+###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Silambam
+ma:Silambam rdf:type ma:MartialArt ;
+            dbp:country dbr:India ;
+            ma:primaryPurpose ma:Self-defence ;
+            ma:primaryTechnicalFocus ma:Weapons ;
+            rdfs:label "Silambam"@en .
+
+
+###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Silat
+ma:Silat rdf:type ma:MartialArt ;
+         dbp:country dbr:Malaysia ;
+         ma:primaryPurpose ma:Self-defence ;
+         ma:primaryTechnicalFocus ma:Joint-locks ,
+                                  ma:Striking ,
+                                  ma:Takedowns ,
+                                  ma:Throwing ,
+                                  ma:Weapons ;
+         rdfs:label "Silat"@en .
+
+
+###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Spiritual
+ma:Spiritual rdf:type ma:Purpose ;
+             rdfs:label "Spiritual"@en .
+
+
+###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Sport
+ma:Sport rdf:type ma:Purpose ;
+         rdfs:label "Sport"@en .
+
+
 ###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Striking
 ma:Striking rdf:type owl:NamedIndividual ,
-                     ma:Style ;
+                     ma:Style ,
+                     ma:Technique ;
             rdfs:label "Striking"@en .
+
+
+###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Subak
+ma:Subak rdf:type ma:MartialArt ;
+         dbp:country dbr:Korea ;
+         ma:primaryTechnicalFocus ma:Striking ,
+                                  ma:Throwing ;
+         rdfs:label "Subak"@en .
+
+
+###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Sumo
+ma:Sumo rdf:type ma:MartialArt ;
+        dbp:country dbr:Japan ;
+        ma:primaryPurpose ma:Sport ;
+        ma:primaryTechnicalFocus ma:Throwing ;
+        rdfs:label "Sumo"@en .
+
+
+###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Systema
+ma:Systema rdf:type ma:MartialArt ;
+           dbp:country dbr:Russia ;
+           ma:primaryPurpose ma:Self-defence ;
+           rdfs:label "Systema"@en .
 
 
 ###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#TaeKwonDo
@@ -468,10 +909,59 @@ ma:TaeKwonDo rdf:type owl:NamedIndividual ,
              rdfs:label "Tae Kwon Do"@en .
 
 
+###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Taekkyeon
+ma:Taekkyeon rdf:type ma:MartialArt ;
+             dbp:country dbr:Korea ;
+             ma:primaryTechnicalFocus ma:Striking ,
+                                      ma:Throwing ;
+             rdfs:label "Taekkyeon"@en .
+
+
+###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Taekwondo
+ma:Taekwondo rdf:type ma:MartialArt ;
+             owl:sameAs ma:taekwando ;
+             dbp:country dbr:Korea ;
+             ma:primaryPurpose ma:Sport ;
+             ma:primaryTechnicalFocus ma:Striking ;
+             rdfs:label "Taekwondo"@en .
+
+
+###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Tahtib
+ma:Tahtib rdf:type ma:MartialArt ;
+          dbp:country dbr:Egypt ;
+          ma:primaryPurpose ma:Self-defence ;
+          ma:primaryTechnicalFocus ma:Weapons ;
+          rdfs:label "Tahtib"@en .
+
+
 ###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#TaiChi
 ma:TaiChi rdf:type owl:NamedIndividual ,
                    ma:ChineseMartialArt ;
           rdfs:label "Tai Chi"@en .
+
+
+###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Taidō
+ma:Taidō rdf:type ma:MartialArt ;
+         dbp:country dbr:Japan ;
+         ma:primaryPurpose ma:Health ,
+                           ma:Self-defence ;
+         ma:primaryTechnicalFocus ma:Striking ;
+         rdfs:label "Taidō"@en .
+
+
+###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Taijiquan
+ma:Taijiquan rdf:type ma:MartialArt ;
+             dbp:country dbr:China ;
+             ma:primaryPurpose ma:Health ,
+                               ma:Spiritual ;
+             ma:primaryTechnicalFocus ma:Joint-locks ,
+                                      ma:Striking ;
+             rdfs:label "Taijiquan"@en .
+
+
+###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Takedowns
+ma:Takedowns rdf:type ma:Technique ;
+             rdfs:label "Takedowns"@en .
 
 
 ###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#TangSooDo
@@ -485,16 +975,254 @@ ma:TangSooDo rdf:type owl:NamedIndividual ,
              rdfs:label "Tang Soo Do"@en .
 
 
+###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Throwing
+ma:Throwing rdf:type ma:Technique ;
+            rdfs:label "Throwing"@en .
+
+
+###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Vovinam
+ma:Vovinam rdf:type ma:MartialArt ;
+           dbp:country dbr:Vietnam ;
+           ma:primaryPurpose ma:Self-defence ;
+           ma:primaryTechnicalFocus ma:Joint-locks ,
+                                    ma:Striking ,
+                                    ma:Takedowns ,
+                                    ma:Throwing ,
+                                    ma:Weapons ;
+           rdfs:label "Vovinam"@en .
+
+
+###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Weapons
+ma:Weapons rdf:type ma:Technique ;
+           rdfs:label "Weapons"@en .
+
+
+###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Wrestling
+ma:Wrestling rdf:type ma:MartialArt ;
+             dbp:country dbr:Greece ;
+             ma:primaryPurpose ma:Self-defence ,
+                               ma:Sport ;
+             ma:primaryTechnicalFocus ma:Joint-locks ,
+                                      ma:Takedowns ,
+                                      ma:Throwing ;
+             rdfs:label "Wrestling"@en .
+
+
+###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#boksen
+
+###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#judo
+
+###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#karate
+
+###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#taekwando
+
+###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Arnis%20%28Kali/%20Eskrima%29
+<http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Arnis%20%28Kali/%20Eskrima%29> rdf:type ma:MartialArt ;
+                                                                                                        dbp:country dbr:Philippines ;
+                                                                                                        ma:primaryPurpose ma:Self-defence ;
+                                                                                                        ma:primaryTechnicalFocus ma:Weapons ;
+                                                                                                        rdfs:label "Arnis (Kali/ Eskrima)"@en .
+
+
+###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Bak%20Mei
+<http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Bak%20Mei> rdf:type ma:MartialArt ;
+                                                                                    dbp:country dbr:China ;
+                                                                                    ma:primaryPurpose ma:Self-defence ;
+                                                                                    ma:primaryTechnicalFocus ma:Striking ;
+                                                                                    rdfs:label "Bak Mei"@en .
+
+
 ###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Brazilian%20Jiu-Jitsu
-<http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Brazilian%20Jiu-Jitsu> rdf:type owl:NamedIndividual .
+<http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Brazilian%20Jiu-Jitsu> rdf:type owl:NamedIndividual ,
+                                                                                                         ma:MartialArt ;
+                                                                                                dbp:country dbr:Brazil ;
+                                                                                                ma:primaryPurpose ma:Self-defence ,
+                                                                                                                  ma:Sport ;
+                                                                                                ma:primaryTechnicalFocus ma:Joint-locks ,
+                                                                                                                         ma:Takedowns ;
+                                                                                                rdfs:label "Brazilian Jiu-Jitsu"@en .
+
+
+###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Daitō-ryū%20Aiki-jūjutsu
+<http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Daitō-ryū%20Aiki-jūjutsu> rdf:type ma:MartialArt ;
+                                                                                                   dbp:country dbr:Japan ;
+                                                                                                   ma:primaryPurpose ma:Self-defence ;
+                                                                                                   ma:primaryTechnicalFocus ma:Joint-locks ,
+                                                                                                                            ma:Takedowns ,
+                                                                                                                            ma:Throwing ;
+                                                                                                   rdfs:label "Daitō-ryū Aiki-jūjutsu"@en .
 
 
 ###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Hap%20Ki%20Do
-<http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Hap%20Ki%20Do> rdf:type owl:NamedIndividual .
+<http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Hap%20Ki%20Do> rdf:type owl:NamedIndividual ,
+                                                                                                 ma:MartialArt ;
+                                                                                        dbp:country dbr:Korea ;
+                                                                                        ma:primaryPurpose ma:Self-defence ;
+                                                                                        ma:primaryTechnicalFocus ma:Joint-locks ,
+                                                                                                                 ma:Striking ,
+                                                                                                                 ma:Takedowns ,
+                                                                                                                 ma:Throwing ,
+                                                                                                                 ma:Weapons ;
+                                                                                        rdfs:label "Hap Ki Do"@en .
+
+
+###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Hung%20Ga%20Kuen
+<http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Hung%20Ga%20Kuen> rdf:type ma:MartialArt ;
+                                                                                           dbp:country dbr:China ;
+                                                                                           ma:primaryPurpose ma:Health ,
+                                                                                                             ma:Self-defence ,
+                                                                                                             ma:Spiritual ;
+                                                                                           ma:primaryTechnicalFocus ma:Striking ,
+                                                                                                                    ma:Takedowns ;
+                                                                                           rdfs:label "Hung Ga Kuen"@en .
+
+
+###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Jeet%20Kune%20Do
+<http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Jeet%20Kune%20Do> rdf:type ma:MartialArt ;
+                                                                                           dbp:country <http://dbpedia.org/resource/United%20States%20of%20America> ;
+                                                                                           ma:primaryPurpose ma:Self-defence ;
+                                                                                           ma:primaryTechnicalFocus ma:Joint-locks ,
+                                                                                                                    ma:Striking ,
+                                                                                                                    ma:Takedowns ,
+                                                                                                                    ma:Throwing ;
+                                                                                           rdfs:label "Jeet Kune Do"@en .
+
+
+###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Krav%20Maga
+<http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Krav%20Maga> rdf:type ma:MartialArt ;
+                                                                                      dbp:country <http://dbpedia.org/resource/Czech%20Republic> ;
+                                                                                      ma:primaryPurpose ma:Self-defence ;
+                                                                                      ma:primaryTechnicalFocus ma:Joint-locks ,
+                                                                                                               ma:Striking ,
+                                                                                                               ma:Takedowns ,
+                                                                                                               ma:Throwing ;
+                                                                                      rdfs:label "Krav Maga"@en .
+
+
+###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Kyusho%20Jitsu
+<http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Kyusho%20Jitsu> rdf:type ma:MartialArt ;
+                                                                                         dbp:country dbr:Japan ;
+                                                                                         ma:primaryPurpose ma:Self-defence ;
+                                                                                         ma:primaryTechnicalFocus ma:Striking ;
+                                                                                         rdfs:label "Kyusho Jitsu"@en .
+
+
+###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Lathi%20Khela
+<http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Lathi%20Khela> rdf:type ma:MartialArt ;
+                                                                                        dbp:country dbr:India ;
+                                                                                        ma:primaryTechnicalFocus ma:Weapons ;
+                                                                                        rdfs:label "Lathi Khela"@en .
+
+
+###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Luta%20Livre
+<http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Luta%20Livre> rdf:type ma:MartialArt ;
+                                                                                       dbp:country dbr:Brazil ;
+                                                                                       ma:primaryPurpose ma:Sport ;
+                                                                                       ma:primaryTechnicalFocus ma:Joint-locks ,
+                                                                                                                ma:Striking ,
+                                                                                                                ma:Takedowns ,
+                                                                                                                ma:Throwing ;
+                                                                                       rdfs:label "Luta Livre"@en .
+
+
+###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Muay%20Thai
+<http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Muay%20Thai> rdf:type ma:MartialArt ;
+                                                                                      dbp:country dbr:Thailand ;
+                                                                                      ma:primaryPurpose ma:Self-defence ,
+                                                                                                        ma:Sport ;
+                                                                                      ma:primaryTechnicalFocus ma:Striking ;
+                                                                                      rdfs:label "Muay Thai"@en .
+
+
+###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Nguni%20Stick%20Fighting
+<http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Nguni%20Stick%20Fighting> rdf:type ma:MartialArt ;
+                                                                                                   dbp:country <http://dbpedia.org/resource/South%20Africa> ;
+                                                                                                   ma:primaryPurpose ma:Self-defence ;
+                                                                                                   ma:primaryTechnicalFocus ma:Weapons ;
+                                                                                                   rdfs:label "Nguni Stick Fighting"@en .
+
+
+###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Nuba%20Fighting
+<http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Nuba%20Fighting> rdf:type ma:MartialArt ;
+                                                                                          dbp:country dbr:Sudan ;
+                                                                                          ma:primaryPurpose ma:Sport ;
+                                                                                          ma:primaryTechnicalFocus ma:Joint-locks ,
+                                                                                                                   ma:Takedowns ,
+                                                                                                                   ma:Throwing ,
+                                                                                                                   ma:Weapons ;
+                                                                                          rdfs:label "Nuba Fighting"@en .
+
+
+###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Shaolin%20Kung%20Fu
+<http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Shaolin%20Kung%20Fu> rdf:type ma:MartialArt ;
+                                                                                              dbp:country dbr:China ;
+                                                                                              ma:primaryTechnicalFocus ma:Striking ;
+                                                                                              rdfs:label "Shaolin Kung Fu"@en .
+
+
+###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Shorinji%20Kempo
+<http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Shorinji%20Kempo> rdf:type ma:MartialArt ;
+                                                                                           dbp:country dbr:Japan ;
+                                                                                           ma:primaryTechnicalFocus ma:Joint-locks ,
+                                                                                                                    ma:Striking ,
+                                                                                                                    ma:Takedowns ,
+                                                                                                                    ma:Throwing ;
+                                                                                           rdfs:label "Shorinji Kempo"@en .
+
+
+###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Shuai%20Jiao
+<http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Shuai%20Jiao> rdf:type ma:MartialArt ;
+                                                                                       dbp:country dbr:China ;
+                                                                                       ma:primaryTechnicalFocus ma:Joint-locks ,
+                                                                                                                ma:Striking ,
+                                                                                                                ma:Takedowns ,
+                                                                                                                ma:Throwing ;
+                                                                                       rdfs:label "Shuai Jiao"@en .
+
+
+###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Soo%20Bahk%20Do
+<http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Soo%20Bahk%20Do> rdf:type ma:MartialArt ;
+                                                                                          dbp:country dbr:Korea ;
+                                                                                          ma:primaryPurpose ma:Self-defence ;
+                                                                                          ma:primaryTechnicalFocus ma:Striking ;
+                                                                                          rdfs:label "Soo Bahk Do"@en .
 
 
 ###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Tang%20Soo%20Do
-<http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Tang%20Soo%20Do> rdf:type owl:NamedIndividual .
+<http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Tang%20Soo%20Do> rdf:type owl:NamedIndividual ,
+                                                                                                   ma:MartialArt ;
+                                                                                          dbp:country dbr:Korea ;
+                                                                                          ma:primaryTechnicalFocus ma:Striking ;
+                                                                                          rdfs:label "Tang Soo Do"@en .
+
+
+###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Vale%20Tudo
+<http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Vale%20Tudo> rdf:type ma:MartialArt ;
+                                                                                      dbp:country dbr:Brazil ;
+                                                                                      ma:primaryPurpose ma:Sport ;
+                                                                                      ma:primaryTechnicalFocus ma:Joint-locks ,
+                                                                                                               ma:Striking ,
+                                                                                                               ma:Takedowns ,
+                                                                                                               ma:Throwing ;
+                                                                                      rdfs:label "Vale Tudo"@en .
+
+
+###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Wing%20Chun%20Kuen
+<http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Wing%20Chun%20Kuen> rdf:type ma:MartialArt ;
+                                                                                             dbp:country dbr:China ;
+                                                                                             ma:primaryPurpose ma:Self-defence ;
+                                                                                             ma:primaryTechnicalFocus ma:Striking ;
+                                                                                             rdfs:label "Wing Chun Kuen"@en .
+
+
+###  http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Ying%20Quan
+<http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#Ying%20Quan> rdf:type ma:MartialArt ;
+                                                                                      dbp:country dbr:China ;
+                                                                                      ma:primaryPurpose ma:Self-defence ;
+                                                                                      ma:primaryTechnicalFocus ma:Joint-locks ,
+                                                                                                               ma:Striking ,
+                                                                                                               ma:Takedowns ;
+                                                                                      rdfs:label "Ying Quan"@en .
 
 
 ###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
