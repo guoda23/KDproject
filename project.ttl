@@ -1,4 +1,3 @@
-@prefix : <http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#> .
 @prefix ma: <http://www.semanticweb.org/guoda/ontologies/2021/9/untitled-ontology-44#> .
 @prefix dbp: <http://dbpedia.org/property/> .
 @prefix dbr: <http://dbpedia.org/resource/> .
