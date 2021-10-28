@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="User Entered Import Resolution" name="file:/C:/Users/tangs/Documents/VU%20stuff/Knowledge%20and%20Data/KDproject/mapped%20triples/sport_locations_triples.ttl" uri="mapped%20triples/sport_locations_triples.ttl"/>
+    <uri id="User Entered Import Resolution" name="file:/C:/Users/tangs/Documents/VU%20stuff/Knowledge%20and%20Data/KDproject/mapped%20triples/primary_technical_focus_triples.ttl" uri="mapped%20triples/primary_technical_focus_triples.ttl"/>
+    <uri id="User Entered Import Resolution" name="file:/C:/Users/tangs/Documents/VU%20stuff/Knowledge%20and%20Data/KDproject/mapped%20triples/primary_purpose_triples.ttl" uri="mapped%20triples/primary_purpose_triples.ttl"/>
+    <uri id="User Entered Import Resolution" name="file:/C:/Users/tangs/Documents/VU%20stuff/Knowledge%20and%20Data/KDproject/mapped%20triples/country_of_origin_triples.ttl" uri="mapped%20triples/country_of_origin_triples.ttl"/>
     <uri id="Imports Wizard Entry" name="http://crossings.github.io/ont/martialmotion" uri="martialmotion.ttl"/>
     <uri id="Imports Wizard Entry" name="http://crossings.github.io/ont/martialmotion" uri="martialmotion.ttl"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base=""/>
